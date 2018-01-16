@@ -1,0 +1,10 @@
+buildscript {
+    repositories {
+        maven { url "http://mocs-artefacts.ensta-bretagne.fr/plug-repo/" }
+    }
+    dependencies {
+        classpath group: 'fr.ensta-bretagne', name: 'plug-plugin', version: '+'
+    }
+}
+
+apply plugin: 'plug.plugin'
