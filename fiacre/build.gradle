@@ -1,0 +1,7 @@
+
+dependencies {
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lfiacre', version: '+'
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: '+'
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lexplicit', version: '+'
+    runtime group: 'fr.ensta-bretagne', name: 'plug-editor-fx', version: '+'
+}
