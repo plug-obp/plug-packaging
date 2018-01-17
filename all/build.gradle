@@ -7,7 +7,7 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lfiacre', version: '+'
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lguardaction', version: '+'
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lspinja', version: '+'
-    //runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: '+'
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: '+'
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: '+'
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-random', version: '+'
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: '+'
