@@ -8,6 +8,8 @@ buildscript {
 }
 
 apply plugin: 'plug.plugin'
-apply plugin: 'application'
 
-mainClassName = "plug.editor.CodeBrowserMain"
+allprojects {
+    apply plugin: 'application'
+    mainClassName = "plug.editor.CodeBrowserMain"
+}
