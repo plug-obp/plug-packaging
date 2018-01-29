@@ -2,8 +2,9 @@
   "package": {
     "name": "plug",
     "repo": "distributions",
-    "subject": "Model Verification",
+    "subject": "plug-obp",
     "desc": "Plug distribution",
+    "vcs_url": "https://github.com/plug-obp",
     "website_url": "https://github.com/plug-obp",
     "licenses": [
       "MIT"
