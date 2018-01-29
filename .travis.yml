@@ -16,5 +16,5 @@ script: ./gradlew distZip
 deploy:
   provider: bintray
   file: 'all/build/descriptor/descriptor.json'
-  user: $BINTRAY_API_USER
+  user: 'plug-obp'
   key: $BINTRAY_API_KEY
