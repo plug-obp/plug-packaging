@@ -9,7 +9,37 @@ buildscript {
 
 apply plugin: 'plug.plugin'
 
+
+def daily = System.getenv("daily")
+
 allprojects {
     apply plugin: 'application'
     mainClassName = "plug.editor.CodeBrowserMain"
+
+
+
+    task descriptor(type: Copy, group: 'distribution') {
+        def descriptorDir = file("${project.buildDir}/descriptor")
+        if (!descriptorDir.exists()) descriptorDir.mkdirs()
+
+        from rootProject.file('template/descriptor.json')
+        into descriptorDir
+        expand(date: 'today', version: project.version)
+
+    }
+
+    distributions {
+        main {
+            baseName = 'plug-all' + (daily != null ? "-daily" : "")
+            contents {
+                from(project.file("dist")) {
+                    "."
+                }
+            }
+        }
+    }
+
+    distZip.dependsOn(descriptor)
+
 }
+

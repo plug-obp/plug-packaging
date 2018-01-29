@@ -1,0 +1,28 @@
+{
+  "package": {
+    "name": "plug",
+    "repo": "distribution",
+    "subject": "Model Verification",
+    "desc": "Plug distribution",
+    "website_url": "https://github.com/plug-obp",
+    "licenses": [
+      "MIT"
+    ],
+    "public_download_numbers": true,
+    "public_stats": true
+  },
+  "version": {
+    "name": "${version}",
+    "released": "${date}",
+    "gpgSign": false
+  },
+  "files": [
+    {
+      "includePattern": "all/build/distributions/(.*).zip",
+      "matrixParams": {
+        "override": 1
+      }
+    }
+  ],
+  "publish": true
+}
