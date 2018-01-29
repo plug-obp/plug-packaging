@@ -19,7 +19,8 @@
   },
   "files": [
     {
-      "includePattern": "all/build/distributions/(.*).zip",
+      "includePattern": "${project}/build/distributions/plug-${project}-${version}.zip",
+      "uploadPattern": "plug-${project}-${version}.zip",
       "matrixParams": {
         "override": 1
       }

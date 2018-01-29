@@ -10,13 +10,12 @@ buildscript {
 apply plugin: 'plug.plugin'
 
 
-def daily = System.getenv("daily")
-def computedVersion = daily != null ? "-daily" : project.version
+def daily = System.getenv("DAILY")
+def computedVersion = daily != null ? "daily" : project.version
 
 allprojects {
     apply plugin: 'application'
     mainClassName = "plug.editor.CodeBrowserMain"
-
 
 
     task descriptor(type: Copy, group: 'distribution') {
@@ -25,13 +24,14 @@ allprojects {
 
         from rootProject.file('template/descriptor.json')
         into descriptorDir
-        expand(date: 'today', version: computedVersion)
+        expand(project: project.name, date: 'today', version: computedVersion)
 
     }
 
     distributions {
         main {
-            baseName = 'plug-all' + (daily != null ? "-daily" : "")
+            baseName = 'plug-all'
+            version = computedVersion
             contents {
                 from(project.file("dist")) {
                     "."
