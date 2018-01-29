@@ -11,6 +11,7 @@ apply plugin: 'plug.plugin'
 
 
 def daily = System.getenv("daily")
+def computedVersion = daily != null ? "-daily" : project.version
 
 allprojects {
     apply plugin: 'application'
@@ -24,7 +25,7 @@ allprojects {
 
         from rootProject.file('template/descriptor.json')
         into descriptorDir
-        expand(date: 'today', version: project.version)
+        expand(date: 'today', version: computedVersion)
 
     }
 
