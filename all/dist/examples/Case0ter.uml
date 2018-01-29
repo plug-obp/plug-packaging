@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_MpJswGIdEeeh1tSTRbH9OQ" name="LevelCrossing">
+  <packagedElement xmi:type="uml:Class" xmi:id="_MpKT0GIdEeeh1tSTRbH9OQ" name="SUS">
+    <ownedAttribute xmi:id="_MpKT0WIdEeeh1tSTRbH9OQ" name="gate" visibility="public" type="_MqmeQGIdEeeh1tSTRbH9OQ" isUnique="false" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpK64GIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MpMJAGIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MpMwEGIdEeeh1tSTRbH9OQ" name="trackCircuitEntrance" visibility="public" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpNXIGIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MpNXIWIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MpN-MGIdEeeh1tSTRbH9OQ" name="trackCircuitApproach" visibility="public" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpN-MWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MpN-MmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MpOlQGIdEeeh1tSTRbH9OQ" name="trackCircuitExit" visibility="public" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpOlQWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MpOlQmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MpPMUGIdEeeh1tSTRbH9OQ" name="controller" visibility="public" type="_MqdUUGIdEeeh1tSTRbH9OQ" isUnique="false" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpPMUWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MpPMUmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MpPzYGIdEeeh1tSTRbH9OQ" name="roadSign" visibility="public" type="_MqkCAGIdEeeh1tSTRbH9OQ" isUnique="false" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpPzYWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MpPzYmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MpQacGIdEeeh1tSTRbH9OQ" name="train" visibility="public" type="_Mp1CMGIdEeeh1tSTRbH9OQ" isUnique="false" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MpQacWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MpQacmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedConnector xmi:id="_MpY9UGIdEeeh1tSTRbH9OQ" name="" type="_Mpx-4mIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_MpcAoGIdEeeh1tSTRbH9OQ" role="_MpKT0WIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_MpcnsGIdEeeh1tSTRbH9OQ" role="_MpPMUGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+    <ownedConnector xmi:id="_MpdOwGIdEeeh1tSTRbH9OQ" name="" type="_MpxX0WIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_MpdOwWIdEeeh1tSTRbH9OQ" role="_MpPMUGIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_Mpd10GIdEeeh1tSTRbH9OQ" role="_MpMwEGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+    <ownedConnector xmi:id="_Mpd10WIdEeeh1tSTRbH9OQ" name="" type="_Mpx-4GIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_Mpd10mIdEeeh1tSTRbH9OQ" role="_MpPMUGIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_Mpec4GIdEeeh1tSTRbH9OQ" role="_MpN-MGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+    <ownedConnector xmi:id="_Mpec4WIdEeeh1tSTRbH9OQ" name="" type="_Mpx-4WIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_Mpec4mIdEeeh1tSTRbH9OQ" role="_MpPMUGIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_MpfD8GIdEeeh1tSTRbH9OQ" role="_MpOlQGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+    <ownedConnector xmi:id="_MpfD8WIdEeeh1tSTRbH9OQ" name="" type="_MpxX0GIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_MpfD8mIdEeeh1tSTRbH9OQ" role="_MpPzYGIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_MpfrAGIdEeeh1tSTRbH9OQ" role="_MpPMUGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+    <ownedConnector xmi:id="_MpfrAWIdEeeh1tSTRbH9OQ" name="" type="_Mpyl8GIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_MpfrAmIdEeeh1tSTRbH9OQ" role="_MpQacGIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_MpgSEGIdEeeh1tSTRbH9OQ" role="_MpMwEGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+    <ownedConnector xmi:id="_MpgSEWIdEeeh1tSTRbH9OQ" name="" type="_MpzNAGIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_MpgSEmIdEeeh1tSTRbH9OQ" role="_MpQacGIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_MpgSE2IdEeeh1tSTRbH9OQ" role="_MpN-MGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+    <ownedConnector xmi:id="_Mpg5IGIdEeeh1tSTRbH9OQ" name="" type="_Mp0bIGIdEeeh1tSTRbH9OQ">
+      <end xmi:id="_Mpg5IWIdEeeh1tSTRbH9OQ" role="_MpQacGIdEeeh1tSTRbH9OQ"/>
+      <end xmi:id="_Mpg5ImIdEeeh1tSTRbH9OQ" role="_MpOlQGIdEeeh1tSTRbH9OQ"/>
+    </ownedConnector>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_MpkjgGIdEeeh1tSTRbH9OQ" name="entranceBeginDetection"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MplxoGIdEeeh1tSTRbH9OQ" name="entranceBeginDetectionSE" signal="_MpkjgGIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_MpmYsGIdEeeh1tSTRbH9OQ" name="entranceEndDetection"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MpmYsWIdEeeh1tSTRbH9OQ" name="entranceEndDetectionSE" signal="_MpmYsGIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_MppcAGIdEeeh1tSTRbH9OQ" name="IEntranceConsumer">
+    <ownedReception xmi:id="_MpqqIGIdEeeh1tSTRbH9OQ" name="entranceBeginDetection" signal="_MpkjgGIdEeeh1tSTRbH9OQ"/>
+    <ownedReception xmi:id="_MprRMGIdEeeh1tSTRbH9OQ" name="entranceEndDetection" signal="_MpmYsGIdEeeh1tSTRbH9OQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_Mpr4QGIdEeeh1tSTRbH9OQ" name="approachBeginDetection"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Mpr4QWIdEeeh1tSTRbH9OQ" name="approachBeginDetectionSE" signal="_Mpr4QGIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_Mpr4QmIdEeeh1tSTRbH9OQ" name="approachEndDetection"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MpsfUGIdEeeh1tSTRbH9OQ" name="approachEndDetectionSE" signal="_Mpr4QmIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_MpsfUWIdEeeh1tSTRbH9OQ" name="IApproachConsumer">
+    <ownedReception xmi:id="_MpsfUmIdEeeh1tSTRbH9OQ" name="approachBeginDetection" signal="_Mpr4QGIdEeeh1tSTRbH9OQ"/>
+    <ownedReception xmi:id="_MptGYGIdEeeh1tSTRbH9OQ" name="approachEndDetection" signal="_Mpr4QmIdEeeh1tSTRbH9OQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_MptGYWIdEeeh1tSTRbH9OQ" name="exitBeginDetection"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MptGYmIdEeeh1tSTRbH9OQ" name="exitBeginDetectionSE" signal="_MptGYWIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_MpttcGIdEeeh1tSTRbH9OQ" name="exitEndDetection"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MpttcWIdEeeh1tSTRbH9OQ" name="exitEndDetectionSE" signal="_MpttcGIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_MpttcmIdEeeh1tSTRbH9OQ" name="IExitConsumer">
+    <ownedReception xmi:id="_MpuUgGIdEeeh1tSTRbH9OQ" name="exitBeginDetection" signal="_MptGYWIdEeeh1tSTRbH9OQ"/>
+    <ownedReception xmi:id="_MpuUgWIdEeeh1tSTRbH9OQ" name="exitEndDetection" signal="_MpttcGIdEeeh1tSTRbH9OQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_MpuUgmIdEeeh1tSTRbH9OQ" name="switchOn"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Mpu7kGIdEeeh1tSTRbH9OQ" name="switchOnSE" signal="_MpuUgmIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_Mpu7kWIdEeeh1tSTRbH9OQ" name="switchOff"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Mpu7kmIdEeeh1tSTRbH9OQ" name="switchOffSE" signal="_Mpu7kWIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_MpvioGIdEeeh1tSTRbH9OQ" name="IRoadSignConsumer">
+    <ownedReception xmi:id="_MpvioWIdEeeh1tSTRbH9OQ" name="switchOn" signal="_MpuUgmIdEeeh1tSTRbH9OQ"/>
+    <ownedReception xmi:id="_MpviomIdEeeh1tSTRbH9OQ" name="switchOff" signal="_Mpu7kWIdEeeh1tSTRbH9OQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_MpwJsGIdEeeh1tSTRbH9OQ" name="open"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MpwJsWIdEeeh1tSTRbH9OQ" name="openSE" signal="_MpwJsGIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_MpwJsmIdEeeh1tSTRbH9OQ" name="close"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_MpwwwGIdEeeh1tSTRbH9OQ" name="closeSE" signal="_MpwJsmIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_MpwwwWIdEeeh1tSTRbH9OQ" name="IGateConsumer">
+    <ownedReception xmi:id="_MpwwwmIdEeeh1tSTRbH9OQ" name="open" signal="_MpwJsGIdEeeh1tSTRbH9OQ"/>
+    <ownedReception xmi:id="_Mpwww2IdEeeh1tSTRbH9OQ" name="close" signal="_MpwJsmIdEeeh1tSTRbH9OQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MpxX0GIdEeeh1tSTRbH9OQ" name="Controller_RoadSign" memberEnd="_MqfwkWIdEeeh1tSTRbH9OQ _MqkCAmIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MpxX0WIdEeeh1tSTRbH9OQ" name="Controller_TrackCircuitEntrance" memberEnd="_MqV_kGIdEeeh1tSTRbH9OQ _MqeicGIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Mpx-4GIdEeeh1tSTRbH9OQ" name="Controller_TrackCircuitApproach" memberEnd="_MqWmoGIdEeeh1tSTRbH9OQ _Mqeic2IdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Mpx-4WIdEeeh1tSTRbH9OQ" name="Controller_TrackCircuitExit" memberEnd="_MqWmo2IdEeeh1tSTRbH9OQ _MqfJgmIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Mpx-4mIdEeeh1tSTRbH9OQ" name="Controller_Gate" memberEnd="_Mqd7YGIdEeeh1tSTRbH9OQ _MqmeQmIdEeeh1tSTRbH9OQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Mpyl8GIdEeeh1tSTRbH9OQ" name="Train_TrackCircuitEntrance" memberEnd="_Mpyl8WIdEeeh1tSTRbH9OQ _Mp1CMWIdEeeh1tSTRbH9OQ">
+    <ownedEnd xmi:id="_Mpyl8WIdEeeh1tSTRbH9OQ" name="train" type="_Mp1CMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpyl8GIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mpyl8mIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mpyl82IdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MpzNAGIdEeeh1tSTRbH9OQ" name="Train_TrackCircuitApproach" memberEnd="_MpzNAWIdEeeh1tSTRbH9OQ _Mp1pQGIdEeeh1tSTRbH9OQ">
+    <ownedEnd xmi:id="_MpzNAWIdEeeh1tSTRbH9OQ" name="train" type="_Mp1CMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_MpzNAGIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mpz0EGIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mpz0EWIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Mp0bIGIdEeeh1tSTRbH9OQ" name="Train_TrackCircuitExit" memberEnd="_Mp0bIWIdEeeh1tSTRbH9OQ _Mp2QUGIdEeeh1tSTRbH9OQ">
+    <ownedEnd xmi:id="_Mp0bIWIdEeeh1tSTRbH9OQ" name="train" type="_Mp1CMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mp0bIGIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mp0bImIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mp0bI2IdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Mp1CMGIdEeeh1tSTRbH9OQ" name="Train" classifierBehavior="_Mp8-AGIdEeeh1tSTRbH9OQ" isActive="true">
+    <ownedAttribute xmi:id="_Mp1CMWIdEeeh1tSTRbH9OQ" name="trackCircuitEntrance" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpyl8GIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mp1CMmIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mp1CM2IdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Mp1pQGIdEeeh1tSTRbH9OQ" name="trackCircuitApproach" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_MpzNAGIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mp1pQWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mp1pQmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Mp2QUGIdEeeh1tSTRbH9OQ" name="trackCircuitExit" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mp0bIGIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mp2QUWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mp2QUmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Mp8-AGIdEeeh1tSTRbH9OQ" name="SM">
+      <region xmi:id="_Mp_aQGIdEeeh1tSTRbH9OQ" name="R">
+        <transition xmi:id="_MqH9IGIdEeeh1tSTRbH9OQ" source="_MqP48GIdEeeh1tSTRbH9OQ" target="_Mqsk4GIdEeeh1tSTRbH9OQ"/>
+        <transition xmi:id="_MqIkMGIdEeeh1tSTRbH9OQ" source="_Mqsk4GIdEeeh1tSTRbH9OQ" target="_MqtL8GIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqKZYGIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send entranceBeginDetection to trackCircuitEntrance;</body>
+          </effect>
+        </transition>
+        <transition xmi:id="_MqLAcGIdEeeh1tSTRbH9OQ" source="_MqtL8GIdEeeh1tSTRbH9OQ" target="_MqtL8WIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqLAcWIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send entranceEndDetection to trackCircuitEntrance;</body>
+          </effect>
+        </transition>
+        <transition xmi:id="_MqLngGIdEeeh1tSTRbH9OQ" source="_MqtL8WIdEeeh1tSTRbH9OQ" target="_MqtL8mIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqLngWIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send approachBeginDetection to trackCircuitApproach;</body>
+          </effect>
+        </transition>
+        <transition xmi:id="_MqMOkGIdEeeh1tSTRbH9OQ" source="_MqtL8mIdEeeh1tSTRbH9OQ" target="_MqtzAGIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqMOkWIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send approachEndDetection to trackCircuitApproach;</body>
+          </effect>
+        </transition>
+        <transition xmi:id="_MqMOkmIdEeeh1tSTRbH9OQ" source="_MqtzAGIdEeeh1tSTRbH9OQ" target="_MqtzAWIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqMOk2IdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send exitBeginDetection to trackCircuitExit;</body>
+          </effect>
+        </transition>
+        <transition xmi:id="_MqM1oGIdEeeh1tSTRbH9OQ" source="_MqtzAWIdEeeh1tSTRbH9OQ" target="_MqtzAmIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqM1oWIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send exitEndDetection to trackCircuitExit;</body>
+          </effect>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MqP48GIdEeeh1tSTRbH9OQ" name="Initial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_Mqsk4GIdEeeh1tSTRbH9OQ" name="Idle"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqtL8GIdEeeh1tSTRbH9OQ" name="EntranceDetection"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqtL8WIdEeeh1tSTRbH9OQ" name="WaitApproachDetection"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqtL8mIdEeeh1tSTRbH9OQ" name="ApproachDetection"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqtzAGIdEeeh1tSTRbH9OQ" name="WaitExitDetection"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqtzAWIdEeeh1tSTRbH9OQ" name="ExitDetection"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqtzAmIdEeeh1tSTRbH9OQ" name="Done"/>
+      </region>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MqSVMGIdEeeh1tSTRbH9OQ" clientDependency="_MqUxcGIdEeeh1tSTRbH9OQ _MqVYgGIdEeeh1tSTRbH9OQ _MqVYgWIdEeeh1tSTRbH9OQ" name="TrackCircuit" classifierBehavior="_MqXNsWIdEeeh1tSTRbH9OQ" isActive="true">
+    <ownedAttribute xmi:id="_MqV_kGIdEeeh1tSTRbH9OQ" name="controller" type="_MqdUUGIdEeeh1tSTRbH9OQ" isUnique="false" association="_MpxX0WIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqV_kWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqV_kmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MqWmoGIdEeeh1tSTRbH9OQ" name="controller" type="_MqdUUGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpx-4GIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqWmoWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqWmomIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MqWmo2IdEeeh1tSTRbH9OQ" name="controller" type="_MqdUUGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpx-4WIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqWmpGIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqXNsGIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="_MqUxcGIdEeeh1tSTRbH9OQ" client="_MqSVMGIdEeeh1tSTRbH9OQ" supplier="_MppcAGIdEeeh1tSTRbH9OQ" contract="_MppcAGIdEeeh1tSTRbH9OQ"/>
+    <interfaceRealization xmi:id="_MqVYgGIdEeeh1tSTRbH9OQ" client="_MqSVMGIdEeeh1tSTRbH9OQ" supplier="_MpsfUWIdEeeh1tSTRbH9OQ" contract="_MpsfUWIdEeeh1tSTRbH9OQ"/>
+    <interfaceRealization xmi:id="_MqVYgWIdEeeh1tSTRbH9OQ" client="_MqSVMGIdEeeh1tSTRbH9OQ" supplier="_MpttcmIdEeeh1tSTRbH9OQ" contract="_MpttcmIdEeeh1tSTRbH9OQ"/>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_MqXNsWIdEeeh1tSTRbH9OQ" name="SM">
+      <region xmi:id="_MqXNsmIdEeeh1tSTRbH9OQ" name="R">
+        <transition xmi:id="_MqXNs2IdEeeh1tSTRbH9OQ" source="_MqbfIWIdEeeh1tSTRbH9OQ" target="_MquaEGIdEeeh1tSTRbH9OQ"/>
+        <transition xmi:id="_MqX0wGIdEeeh1tSTRbH9OQ" source="_MquaEGIdEeeh1tSTRbH9OQ" target="_MquaEWIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqYb0WIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send entranceBeginDetection to controller;</body>
+          </effect>
+          <trigger xmi:id="_MqYb0GIdEeeh1tSTRbH9OQ" event="_MplxoGIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqZC4GIdEeeh1tSTRbH9OQ" source="_MquaEGIdEeeh1tSTRbH9OQ" target="_MquaEWIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqZC4mIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send approachBeginDetection to controller;</body>
+          </effect>
+          <trigger xmi:id="_MqZC4WIdEeeh1tSTRbH9OQ" event="_Mpr4QWIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqZp8GIdEeeh1tSTRbH9OQ" source="_MquaEGIdEeeh1tSTRbH9OQ" target="_MquaEWIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqZp8mIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send exitBeginDetection to controller;</body>
+          </effect>
+          <trigger xmi:id="_MqZp8WIdEeeh1tSTRbH9OQ" event="_MptGYmIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqaRAGIdEeeh1tSTRbH9OQ" source="_MquaEWIdEeeh1tSTRbH9OQ" target="_MquaEGIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqaRAmIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send entranceEndDetection to controller;</body>
+          </effect>
+          <trigger xmi:id="_MqaRAWIdEeeh1tSTRbH9OQ" event="_MpmYsWIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_Mqa4EGIdEeeh1tSTRbH9OQ" source="_MquaEWIdEeeh1tSTRbH9OQ" target="_MquaEGIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Mqa4EmIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send approachEndDetection to controller;</body>
+          </effect>
+          <trigger xmi:id="_Mqa4EWIdEeeh1tSTRbH9OQ" event="_MpsfUGIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_Mqa4E2IdEeeh1tSTRbH9OQ" source="_MquaEWIdEeeh1tSTRbH9OQ" target="_MquaEGIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqbfIGIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send exitEndDetection to controller;</body>
+          </effect>
+          <trigger xmi:id="_Mqa4FGIdEeeh1tSTRbH9OQ" event="_MpttcWIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MqbfIWIdEeeh1tSTRbH9OQ" name="Initial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MquaEGIdEeeh1tSTRbH9OQ" name="NoDetection"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MquaEWIdEeeh1tSTRbH9OQ" name="Detection"/>
+      </region>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MqdUUGIdEeeh1tSTRbH9OQ" clientDependency="_MqdUUWIdEeeh1tSTRbH9OQ _MqdUUmIdEeeh1tSTRbH9OQ _MqdUU2IdEeeh1tSTRbH9OQ" name="Controller" classifierBehavior="_MqgXoGIdEeeh1tSTRbH9OQ" isActive="true">
+    <ownedAttribute xmi:id="_Mqd7YGIdEeeh1tSTRbH9OQ" name="gate" type="_MqmeQGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpx-4mIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Mqd7YWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mqd7YmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MqeicGIdEeeh1tSTRbH9OQ" name="trackCircuitEntrance" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_MpxX0WIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqeicWIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqeicmIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_Mqeic2IdEeeh1tSTRbH9OQ" name="trackCircuitApproach" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpx-4GIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqfJgGIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqfJgWIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MqfJgmIdEeeh1tSTRbH9OQ" name="trackCircuitExit" type="_MqSVMGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpx-4WIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqfJg2IdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqfwkGIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MqfwkWIdEeeh1tSTRbH9OQ" name="roadSign" type="_MqkCAGIdEeeh1tSTRbH9OQ" isUnique="false" association="_MpxX0GIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqfwkmIdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_Mqfwk2IdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="_MqdUUWIdEeeh1tSTRbH9OQ" client="_MqdUUGIdEeeh1tSTRbH9OQ" supplier="_MppcAGIdEeeh1tSTRbH9OQ" contract="_MppcAGIdEeeh1tSTRbH9OQ"/>
+    <interfaceRealization xmi:id="_MqdUUmIdEeeh1tSTRbH9OQ" client="_MqdUUGIdEeeh1tSTRbH9OQ" supplier="_MpsfUWIdEeeh1tSTRbH9OQ" contract="_MpsfUWIdEeeh1tSTRbH9OQ"/>
+    <interfaceRealization xmi:id="_MqdUU2IdEeeh1tSTRbH9OQ" client="_MqdUUGIdEeeh1tSTRbH9OQ" supplier="_MpttcmIdEeeh1tSTRbH9OQ" contract="_MpttcmIdEeeh1tSTRbH9OQ"/>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_MqgXoGIdEeeh1tSTRbH9OQ" name="SM">
+      <region xmi:id="_MqgXoWIdEeeh1tSTRbH9OQ" name="R">
+        <transition xmi:id="_MqgXomIdEeeh1tSTRbH9OQ" source="_Mqiz4GIdEeeh1tSTRbH9OQ" target="_MquaEmIdEeeh1tSTRbH9OQ"/>
+        <transition xmi:id="_MqgXo2IdEeeh1tSTRbH9OQ" source="_MquaEmIdEeeh1tSTRbH9OQ" target="_MqvBIGIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqgXpWIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send switchOn to roadSign;</body>
+          </effect>
+          <trigger xmi:id="_MqgXpGIdEeeh1tSTRbH9OQ" event="_MplxoGIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_Mqg-sGIdEeeh1tSTRbH9OQ" source="_MqvBIGIdEeeh1tSTRbH9OQ" target="_MqvBIWIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Mqg-smIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send close to gate;</body>
+          </effect>
+          <trigger xmi:id="_Mqg-sWIdEeeh1tSTRbH9OQ" event="_Mpr4QWIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqhlwGIdEeeh1tSTRbH9OQ" source="_MqvBIWIdEeeh1tSTRbH9OQ" target="_MqvBImIdEeeh1tSTRbH9OQ">
+          <trigger xmi:id="_MqhlwWIdEeeh1tSTRbH9OQ" event="_MpsfUGIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqhlwmIdEeeh1tSTRbH9OQ" source="_MqvBImIdEeeh1tSTRbH9OQ" target="_MqvBI2IdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqhlxGIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send open to gate;</body>
+          </effect>
+          <trigger xmi:id="_Mqhlw2IdEeeh1tSTRbH9OQ" event="_MptGYmIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqiM0GIdEeeh1tSTRbH9OQ" source="_MqvBI2IdEeeh1tSTRbH9OQ" target="_MquaEmIdEeeh1tSTRbH9OQ">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_MqiM0mIdEeeh1tSTRbH9OQ">
+            <language>ABCD</language>
+            <body>send switchOff to roadSign;</body>
+          </effect>
+          <trigger xmi:id="_MqiM0WIdEeeh1tSTRbH9OQ" event="_MpttcWIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_Mqiz4GIdEeeh1tSTRbH9OQ" name="Initial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MquaEmIdEeeh1tSTRbH9OQ" name="Idle"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqvBIGIdEeeh1tSTRbH9OQ" name="TrainDetected"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqvBIWIdEeeh1tSTRbH9OQ" name="Approach"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqvBImIdEeeh1tSTRbH9OQ" name="Passing"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqvBI2IdEeeh1tSTRbH9OQ" name="WaitEndPassing"/>
+      </region>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MqkCAGIdEeeh1tSTRbH9OQ" clientDependency="_MqkCAWIdEeeh1tSTRbH9OQ" name="RoadSign" classifierBehavior="_MqkpEWIdEeeh1tSTRbH9OQ" isActive="true">
+    <ownedAttribute xmi:id="_MqkCAmIdEeeh1tSTRbH9OQ" name="controller" type="_MqdUUGIdEeeh1tSTRbH9OQ" isUnique="false" association="_MpxX0GIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqkCA2IdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqkpEGIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="_MqkCAWIdEeeh1tSTRbH9OQ" client="_MqkCAGIdEeeh1tSTRbH9OQ" supplier="_MpvioGIdEeeh1tSTRbH9OQ" contract="_MpvioGIdEeeh1tSTRbH9OQ"/>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_MqkpEWIdEeeh1tSTRbH9OQ" name="SM">
+      <region xmi:id="_MqkpEmIdEeeh1tSTRbH9OQ" name="R">
+        <transition xmi:id="_MqkpE2IdEeeh1tSTRbH9OQ" source="_MqlQI2IdEeeh1tSTRbH9OQ" target="_MqvoMGIdEeeh1tSTRbH9OQ"/>
+        <transition xmi:id="_MqkpFGIdEeeh1tSTRbH9OQ" source="_MqvoMGIdEeeh1tSTRbH9OQ" target="_MqvoMWIdEeeh1tSTRbH9OQ">
+          <trigger xmi:id="_MqlQIGIdEeeh1tSTRbH9OQ" event="_Mpu7kGIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqlQIWIdEeeh1tSTRbH9OQ" source="_MqvoMWIdEeeh1tSTRbH9OQ" target="_MqvoMGIdEeeh1tSTRbH9OQ">
+          <trigger xmi:id="_MqlQImIdEeeh1tSTRbH9OQ" event="_Mpu7kmIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MqlQI2IdEeeh1tSTRbH9OQ" name="Initial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqvoMGIdEeeh1tSTRbH9OQ" name="Inactive"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqvoMWIdEeeh1tSTRbH9OQ" name="Active"/>
+      </region>
+    </ownedBehavior>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MqmeQGIdEeeh1tSTRbH9OQ" clientDependency="_MqmeQWIdEeeh1tSTRbH9OQ" name="Gate" classifierBehavior="_MqnFUWIdEeeh1tSTRbH9OQ" isActive="true">
+    <ownedAttribute xmi:id="_MqmeQmIdEeeh1tSTRbH9OQ" name="controller" type="_MqdUUGIdEeeh1tSTRbH9OQ" isUnique="false" association="_Mpx-4mIdEeeh1tSTRbH9OQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MqmeQ2IdEeeh1tSTRbH9OQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralInteger" xmi:id="_MqnFUGIdEeeh1tSTRbH9OQ" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="_MqmeQWIdEeeh1tSTRbH9OQ" client="_MqmeQGIdEeeh1tSTRbH9OQ" supplier="_MpwwwWIdEeeh1tSTRbH9OQ" contract="_MpwwwWIdEeeh1tSTRbH9OQ"/>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_MqnFUWIdEeeh1tSTRbH9OQ" name="SM">
+      <region xmi:id="_MqnFUmIdEeeh1tSTRbH9OQ" name="R">
+        <transition xmi:id="_MqnFU2IdEeeh1tSTRbH9OQ" source="_MqnsYmIdEeeh1tSTRbH9OQ" target="_MqvoMmIdEeeh1tSTRbH9OQ"/>
+        <transition xmi:id="_MqnFVGIdEeeh1tSTRbH9OQ" source="_MqvoMmIdEeeh1tSTRbH9OQ" target="_MqwPQGIdEeeh1tSTRbH9OQ">
+          <trigger xmi:id="_MqnFVWIdEeeh1tSTRbH9OQ" event="_MpwwwGIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <transition xmi:id="_MqnsYGIdEeeh1tSTRbH9OQ" source="_MqwPQGIdEeeh1tSTRbH9OQ" target="_MqvoMmIdEeeh1tSTRbH9OQ">
+          <trigger xmi:id="_MqnsYWIdEeeh1tSTRbH9OQ" event="_MpwJsWIdEeeh1tSTRbH9OQ"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MqnsYmIdEeeh1tSTRbH9OQ" name="Initial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqvoMmIdEeeh1tSTRbH9OQ" name="Opened"/>
+        <subvertex xmi:type="uml:State" xmi:id="_MqwPQGIdEeeh1tSTRbH9OQ" name="Closed"/>
+      </region>
+    </ownedBehavior>
+  </packagedElement>
+</uml:Model>

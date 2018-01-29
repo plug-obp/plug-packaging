@@ -1,0 +1,3 @@
+{
+    "command": ["python", "python/r_counter.py", "--port=$PLUG_PORT"]
+}

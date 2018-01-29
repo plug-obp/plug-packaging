@@ -1,0 +1,10 @@
+alice_bob is alice_bob from [Explicit] "alice-bob.json"
+pingpong is gaMon from [TUML] "PingPong0.uml"
+
+composite x is
+par
+	alice0:alice_bob
+||  alice1:alice_bob
+||  pingpong1:pingpong
+||  pingpong2:pingpong
+end composite
