@@ -1,4 +1,4 @@
-counter is counter from [Remote] "python_counter.remote"
+counter is counter from [Remote] "./plug-remote-python/python_counter.remote"
 
 composite x is
 par
