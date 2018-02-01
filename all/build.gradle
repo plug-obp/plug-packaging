@@ -2,15 +2,11 @@
 dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lclockrdl', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lexplicit', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lfiacre', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lguardaction', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lspinja', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-composite', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-random', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-editor-fx', version: plug.version
 }
