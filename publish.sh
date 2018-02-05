@@ -1,5 +1,11 @@
 
+# Cleans gradle caches
+cd ~/.gradle/caches
+find . -name fr.ensta-bretagne -type d -exec rm -fr {} \;
+cd -
 
+
+# Publish dependencies
 dependencies=`cat $1 | xargs`
 
 for dep in $dependencies; do
