@@ -41,6 +41,5 @@ allprojects {
     }
 
     distZip.dependsOn(descriptor)
-
 }
 
