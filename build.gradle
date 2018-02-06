@@ -28,7 +28,7 @@ subprojects {
 
     distributions {
         main {
-            baseName = 'plug-all'
+            baseName = 'plug-' + project.name
             version = computedVersion
             contents {
                 from(project.file("dist")) {
