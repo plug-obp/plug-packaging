@@ -15,8 +15,6 @@ def computedVersion = daily != null ? "daily" : project.version
 
 allprojects {
     apply plugin: 'application'
-    mainClassName = "plug.editor.CodeBrowserMain"
-
 
     task descriptor(type: Copy, group: 'distribution') {
         def descriptorDir = file("${project.buildDir}/descriptor")

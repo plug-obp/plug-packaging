@@ -14,7 +14,12 @@ script: ./gradlew distZip
 #    - $HOME/.gradle/wrapper/
 
 deploy:
-  provider: bintray
+  - provider: bintray
   file: 'all/build/descriptor/descriptor.json'
   user: $BINTRAY_API_USER
   key: $BINTRAY_API_KEY
+  - provider: bintray
+  file: 'simulator/build/descriptor/descriptor.json'
+  user: $BINTRAY_API_USER
+  key: $BINTRAY_API_KEY
+

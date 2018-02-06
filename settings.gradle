@@ -1,1 +1,1 @@
-include 'all'
+include 'all', 'simulator'
