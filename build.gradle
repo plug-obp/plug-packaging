@@ -13,7 +13,7 @@ apply plugin: 'plug.plugin'
 def daily = System.getenv("DAILY")
 def computedVersion = daily != null ? "daily" : project.version
 
-allprojects {
+subprojects {
     apply plugin: 'application'
 
     task descriptor(type: Copy, group: 'distribution') {
