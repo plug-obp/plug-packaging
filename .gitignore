@@ -5,6 +5,8 @@
 *.iml
 all/tmp
 
+*.pyc
+
 .classpath
 .project
 **/bin
