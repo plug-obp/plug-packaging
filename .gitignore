@@ -4,3 +4,8 @@
 **/*.obp
 *.iml
 all/tmp
+
+.classpath
+.project
+**/bin
+**/.settings
