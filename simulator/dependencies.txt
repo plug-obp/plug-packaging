@@ -3,7 +3,6 @@ plug-core
 
 jicpl
 
-plug-module-loading
 plug-pastfreeze
 plug-synchronization
 
