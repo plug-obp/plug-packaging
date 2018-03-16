@@ -1,8 +1,9 @@
 language: java
 jdk:
   - oraclejdk8
-script: ./gradlew distZip
-
+script:
+  - ./gradlew distZip
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then ./gradlew bintrayUpload; fi
 
 # Don't use cache to force the use of the newest jar of the same version
 #before_cache:
@@ -12,21 +13,6 @@ script: ./gradlew distZip
 #  directories:
 #    - $HOME/.gradle/caches/
 #    - $HOME/.gradle/wrapper/
-
-deploy:
-  - provider: bintray
-    file: 'all/build/descriptor/descriptor.json'
-    user: $BINTRAY_API_USER
-    key: $BINTRAY_API_KEY
-    on:
-      branch: master
-  - provider: bintray
-    file: 'simulator/build/descriptor/descriptor.json'
-    user: $BINTRAY_API_USER
-    key: $BINTRAY_API_KEY
-    on:
-      branch: master
-
 
 notifications:
     slack: plug-obp:6ZMx4zejBJ6g6yHuyc7dCCww

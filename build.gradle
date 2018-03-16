@@ -8,24 +8,20 @@ buildscript {
     }
 }
 
+plugins {
+    id "com.jfrog.bintray" version "1.7.3"
+}
+
 apply plugin: 'plug.plugin'
 
 
 def daily = System.getenv("DAILY")
 def computedVersion = daily != null ? "daily" : project.version
 
+println "--- Building version:${computedVersion} ---"
+
 subprojects {
     apply plugin: 'application'
-
-    task descriptor(type: Copy, group: 'distribution') {
-        def descriptorDir = file("${project.buildDir}/descriptor")
-        if (!descriptorDir.exists()) descriptorDir.mkdirs()
-
-        from rootProject.file('template/descriptor.json')
-        into descriptorDir
-        expand(project: project.name, date: 'today', version: computedVersion)
-
-    }
 
     distributions {
         main {
@@ -39,6 +35,35 @@ subprojects {
         }
     }
 
-    distZip.dependsOn(descriptor)
+    bintray {
+        user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
+        key = project.hasProperty('bintrayApiKey') ? project.property('bintrayApiKey') : System.getenv('BINTRAY_API_KEY')
+
+        publications = []
+
+        filesSpec {
+            from file("${buildDir}/distributions/plug-${project.name}-${version}.zip")
+            into '.'
+        }
+
+        pkg {
+            name = "plug"
+            repo = 'distributions'
+            userOrg = project.plug.bintrayOrg
+            desc = 'Plug distribution'
+            vcsUrl = 'https://github.com/plug-obp'
+            websiteUrl = 'http://plug-obp.github.io'
+            licenses = ['MIT']
+            publicDownloadNumbers = true
+            override = true
+            publish = true
+
+            //Optional version descriptor
+            version {
+                name = computedVersion //Bintray logical version name
+                released  = new Date()
+            }
+        }
+    }
 }
 
