@@ -6,6 +6,7 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lexplicit', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'runtime-fiacre', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'runtime-postmortem-obp', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lspinja', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-composite', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: plug.version
