@@ -11,6 +11,7 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-composite', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
 
     runtime group: 'fr.ensta-bretagne', name: 'plug-simulation-fx-ui', version: plug.version
 }
