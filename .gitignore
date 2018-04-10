@@ -3,7 +3,7 @@
 **/build
 **/*.obp
 *.iml
-all/tmp
+obp2/tmp
 
 *.pyc
 
