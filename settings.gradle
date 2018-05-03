@@ -1,1 +1,1 @@
-include 'all', 'simulator'
+include 'obp2', 'simulator'
