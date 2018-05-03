@@ -1,5 +1,7 @@
 
 mainClassName = "plug.core.fx.PlugUI"
+applicationDefaultJvmArgs = ["-Djava.library.path=/Users/ciprian/Documents/RESEARCH/DEPARTS/rampe/2018_04_CS/2018_04_05/OUTPUT/system.obp/bin",
+    ]
 
 dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
