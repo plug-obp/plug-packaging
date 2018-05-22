@@ -38,7 +38,7 @@ subprojects {
     }
 
     bintrayUpload.dependsOn(distZip)
-    bintrayUpload.dependsOn(createDmg)
+    bintrayUpload.dependsOn(createAppZip)
 
     bintray {
         user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
