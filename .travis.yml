@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk8
 script:
-  - ./gradlew distZip
+  - ./gradlew distZip createDmg
   - if [ "$TRAVIS_BRANCH" = "master" ]; then ./gradlew bintrayUpload; fi
 
 # Don't use cache to force the use of the newest jar of the same version

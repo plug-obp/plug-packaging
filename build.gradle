@@ -10,6 +10,7 @@ buildscript {
 
 plugins {
     id "com.jfrog.bintray" version "1.7.3"
+    id "edu.sc.seis.macAppBundle" version "2.2.1"
 }
 
 apply plugin: 'plug.plugin'
@@ -22,6 +23,7 @@ println "--- Building version:${computedVersion} ---"
 
 subprojects {
     apply plugin: 'application'
+    apply plugin: "edu.sc.seis.macAppBundle"
 
     distributions {
         main {
@@ -36,6 +38,7 @@ subprojects {
     }
 
     bintrayUpload.dependsOn(distZip)
+    bintrayUpload.dependsOn(createDmg)
 
     bintray {
         user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')

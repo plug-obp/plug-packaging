@@ -1,7 +1,21 @@
 
-mainClassName = "plug.core.fx.PlugUI"
-applicationDefaultJvmArgs = ["-Djava.library.path=/Users/ciprian/Documents/RESEARCH/DEPARTS/rampe/2018_04_CS/2018_04_05/OUTPUT/system.obp/bin",
-    ]
+def mainClass = "plug.core.fx.PlugUI"
+def properties = [ "java.library.path": "/Users/ciprian/Documents/RESEARCH/DEPARTS/rampe/2018_04_CS/2018_04_05/OUTPUT/system.obp/bin"]
+mainClassName = mainClass
+
+
+applicationDefaultJvmArgs = []
+properties.each { key, value ->
+    applicationDefaultJvmArgs.add("-D${key}=${value}")
+}
+
+macAppBundle {
+    mainClassName = mainClass
+    icon = "icon/OBP2.icns"
+    properties.each { key, value ->
+        javaProperties.put(key, value)
+    }
+}
 
 dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
