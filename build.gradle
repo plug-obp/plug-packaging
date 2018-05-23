@@ -37,6 +37,10 @@ subprojects {
         }
     }
 
+    macAppBundle {
+        dmgName =  'plug-' + project.name + "-mac-" + computedVersion
+    }
+
     bintrayUpload.dependsOn(distZip)
     bintrayUpload.dependsOn(createAppZip)
 
