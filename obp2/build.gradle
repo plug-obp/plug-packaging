@@ -1,6 +1,9 @@
 
 def mainClass = "plug.core.fx.PlugUI"
-def properties = [ "java.library.path": "/Users/ciprian/Documents/RESEARCH/DEPARTS/rampe/2018_04_CS/2018_04_05/OUTPUT/system.obp/bin"]
+def properties = new HashMap()
+properties.put("java.library.path", "/Users/ciprian/Documents/RESEARCH/DEPARTS/rampe/2018_04_CS/2018_04_05/OUTPUT/system.obp/bin")
+properties.put("apple.laf.useScreenMenuBar", "true")
+
 mainClassName = mainClass
 
 
@@ -19,7 +22,6 @@ distributions {
         }
     }
 }
-
 
 macAppBundle {
     mainClassName = mainClass

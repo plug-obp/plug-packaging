@@ -8,7 +8,7 @@ New features:
 Bug fixes:
 
 - Mixed errors concerning model and properties are cleaned when changing the model.
-
+- Stabilization of remote python runtime.
 
 # Version 0.0.4 on the 16th of April 2018
 
