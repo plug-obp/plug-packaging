@@ -1,3 +1,0 @@
-{
-    "command": ["python", "python/ga_counter.py", "--port=$PLUG_PORT"]
-}
