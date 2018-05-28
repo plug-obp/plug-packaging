@@ -9,6 +9,18 @@ properties.each { key, value ->
     applicationDefaultJvmArgs.add("-D${key}=${value}")
 }
 
+distributions {
+    main {
+        contents {
+            from(project.file("dist")) {
+                excludes ["*.pyc"]
+                into "."
+            }
+        }
+    }
+}
+
+
 macAppBundle {
     mainClassName = mainClass
     icon = "icon/OBP2.icns"

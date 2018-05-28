@@ -29,11 +29,6 @@ subprojects {
         main {
             baseName = 'plug-' + project.name
             version = computedVersion
-            contents {
-                from(project.file("dist")) {
-                    "."
-                }
-            }
         }
     }
 
