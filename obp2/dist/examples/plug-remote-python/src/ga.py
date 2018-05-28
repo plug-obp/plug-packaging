@@ -51,13 +51,21 @@ def fire_transition(configuration, transition, model):
     return [encode_configuration(variables)]
 
 def register_atomic_proposition(propositions, model):
-    model[ATOMS] = propositions
+    atoms = model[ATOMS]
+    result = []
+    for proposition in propositions:
+        result.append(len(atoms))
+        atoms.append(proposition)
+    return result
 
 def atomic_proposition_valuations(configuration, model):
     variables = decode_configuration(model[ORIGINAL], configuration)
     result = []
     for atom in model[ATOMS]:
-        result.append(eval(atom, model[GLOBALS], {"c": variables}))
+        try: 
+            result.append(eval(atom, model[GLOBALS], {"c": variables}))
+        except:
+             result.append(False)
     return result
 
 def configuration_items(configuration, model):
@@ -87,6 +95,7 @@ def to_plug(model):
     return {
         GLOBALS: model[GLOBALS],
         ORIGINAL: model,
+        ATOMS: [],
         remote.CONF_SIZE: len(model[VARIABLES]) * 4,
         remote.TRANSITION_SIZE: transition_size,
         remote.INITIAL_CONFIGURATIONS:
