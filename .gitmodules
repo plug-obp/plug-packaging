@@ -1,0 +1,3 @@
+[submodule "obp2/dist/examples/plug-remote-python"]
+	path = obp2/dist/examples/plug-remote-python
+	url = https://github.com/plug-obp/plug-remote-python.git
