@@ -12,3 +12,5 @@ obp2/tmp
 **/bin
 **/.settings
 all/tmp
+obp2/deserialization.txt
+obp2/readelf.txt
