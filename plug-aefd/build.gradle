@@ -1,0 +1,38 @@
+
+def mainClass = "plug.core.fx.PlugUI"
+def properties = new HashMap()
+properties.put("apple.laf.useScreenMenuBar", "true")
+
+mainClassName = mainClass
+
+
+applicationDefaultJvmArgs = ["-Xms16384m", "-Xmx16384m"]
+properties.each { key, value ->
+    applicationDefaultJvmArgs.add("-D${key}=${value}")
+}
+
+distributions {
+    main {
+        contents {
+            from(project.file("dist")) {
+                excludes ["*.pyc"]
+                into "."
+            }
+        }
+    }
+}
+
+macAppBundle {
+    mainClassName = mainClass
+    icon = "icon/OBP2.icns"
+    properties.each { key, value ->
+        javaProperties.put(key, value)
+    }
+}
+
+dependencies {
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-core-ui', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'AEFDRuntime', version: plug.version
+}
