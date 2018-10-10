@@ -1,7 +1,6 @@
 
-def mainClass = "plug.ui2.PlugUI"
+def mainClass = "plug.ui2.simulation.ui.PlugSimulationUI"
 def properties = new HashMap()
-properties.put("java.library.path", "/Users/ciprian/Downloads/OBP-1.5.1_osx64 3/OUTPUT/system.obp/bin")
 properties.put("apple.laf.useScreenMenuBar", "true")
 
 mainClassName = mainClass

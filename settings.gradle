@@ -1,2 +1,3 @@
 include 'obp2'
-include 'plug-aefd'
+include 'aefd'
+include 'simulator'
