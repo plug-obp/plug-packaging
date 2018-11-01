@@ -1,5 +1,5 @@
 
-def mainClass = "plug.core.fx.PlugUI"
+def mainClass = "plug.ui2.PlugUI"
 def properties = new HashMap()
 properties.put("apple.laf.useScreenMenuBar", "true")
 
