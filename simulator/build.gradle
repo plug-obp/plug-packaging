@@ -6,7 +6,7 @@ properties.put("apple.laf.useScreenMenuBar", "true")
 mainClassName = mainClass
 
 
-applicationDefaultJvmArgs = ["-Xms16384m", "-Xmx16384m"]
+//applicationDefaultJvmArgs = ["-Xms16384m", "-Xmx16384m"]
 properties.each { key, value ->
     applicationDefaultJvmArgs.add("-D${key}=${value}")
 }
