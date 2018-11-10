@@ -1,0 +1,7 @@
+counter is counter from [Remote] "./plug-remote-python/python_counter.remote"
+
+composite x is
+par
+    counter1:counter
+||  counter2:counter
+end composite

@@ -1,0 +1,56 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {       url "http://sandec.bintray.com/repo"     }
+    }
+    dependencies {
+        classpath 'com.sandec.jpro:jpro-plugin-gradle:2018.1.6'
+    }
+}
+repositories {
+    jcenter()
+}
+apply plugin: 'com.sandec.jpro'
+jpro {
+    port = 8080
+}
+
+
+def mainClass = "plug.ui2.PlugUI"
+def properties = new HashMap()
+//properties.put("java.library.path", "/Users/ciprian/Downloads/OBP-1.5.1_osx64 3/OUTPUT/system.obp/bin")
+properties.put("apple.laf.useScreenMenuBar", "true")
+
+mainClassName = mainClass
+
+
+//applicationDefaultJvmArgs = ["-Xms16384m", "-Xmx16384m"]
+properties.each { key, value ->
+    applicationDefaultJvmArgs.add("-D${key}=${value}")
+}
+
+distributions {
+    main {
+        contents {
+            from(project.file("dist")) {
+                excludes ["*.pyc"]
+                into "."
+            }
+        }
+    }
+}
+
+dependencies {
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lexplicit', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'runtime-fiacre', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'runtime-postmortem-obp', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lspinja', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-composite', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-core-ui', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
+}
+

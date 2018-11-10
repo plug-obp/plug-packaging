@@ -1,0 +1,6 @@
+{
+    "model": "AliceBob1.fcr",
+    "properties": {
+        "exclusion": "![]!(|{Alice}1@CS| && |{Bob}1@CS|)"
+    }
+}
