@@ -39,6 +39,7 @@ macAppBundle {
     }
     dmgName =  'plug-' + project.name + "-mac-" + project.computedVersion
     bundleJRE = false
+    jreHome = ""
 }
 
 dependencies {
