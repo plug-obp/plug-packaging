@@ -47,3 +47,6 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-core-ui', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'AEFDRuntime', version: plug.version
 }
+
+
+bintrayUpload.dependsOn{[build, createAppZip]}
