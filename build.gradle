@@ -4,13 +4,13 @@ buildscript {
         maven { url "https://dl.bintray.com/plug-obp/maven" }
     }
     dependencies {
-        classpath group: 'fr.ensta-bretagne', name: 'plug-plugin', version: '+'
+        classpath group: 'fr.ensta-bretagne', name: 'plug-plugin', version: '0.6'
     }
 }
 
 plugins {
-    id "com.jfrog.bintray" version "1.7.3"
-    id "edu.sc.seis.macAppBundle" version "2.2.1"
+    id "com.jfrog.bintray" version "1.8.4"
+    //id "edu.sc.seis.macAppBundle" version "2.2.1"
 }
 
 apply plugin: 'plug.plugin'
@@ -18,26 +18,13 @@ apply plugin: 'plug.plugin'
 
 def daily = System.getenv("DAILY")
 def computedVersion = daily != null ? "daily" : project.version
+project.ext.computedVersion =  computedVersion
 
 println "--- Building version:${computedVersion} ---"
 
 subprojects {
-    apply plugin: 'application'
-    apply plugin: "edu.sc.seis.macAppBundle"
-
-    distributions {
-        main {
-            baseName = 'plug-' + project.name
-            version = computedVersion
-        }
-    }
-
-    macAppBundle {
-        dmgName =  'plug-' + project.name + "-mac-" + computedVersion
-    }
-
-    bintrayUpload.dependsOn(distZip)
-    bintrayUpload.dependsOn(createAppZip)
+    bintrayUpload.dependsOn{distZip}
+    bintrayUpload.dependsOn{createAppZip}
 
     bintray {
         user = project.hasProperty('bintrayUser') ? project.property('bintrayUser') : System.getenv('BINTRAY_USER')
@@ -70,4 +57,3 @@ subprojects {
         }
     }
 }
-
