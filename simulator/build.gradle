@@ -37,6 +37,7 @@ macAppBundle {
         javaProperties.put(key, value)
     }
     dmgName =  'plug-' + project.name + "-mac-" + project.computedVersion
+    bundleJRE = false
 }
 
 dependencies {
