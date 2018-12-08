@@ -1,3 +1,9 @@
+plugins {
+    id "edu.sc.seis.macAppBundle" version "2.2.1"
+}
+
+apply plugin: 'application'
+apply plugin: "edu.sc.seis.macAppBundle"
 
 def mainClass = "plug.ui2.PlugUI"
 def properties = new HashMap()
@@ -29,6 +35,7 @@ macAppBundle {
     properties.each { key, value ->
         javaProperties.put(key, value)
     }
+    dmgName =  'plug-' + project.name + "-mac-" + project.computedVersion
 }
 
 dependencies {

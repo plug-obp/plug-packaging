@@ -31,6 +31,8 @@ properties.each { key, value ->
 
 distributions {
     main {
+        baseName = 'plug-' + project.name
+        version = project.computedVersion
         contents {
             from(project.file("dist")) {
                 excludes ["*.pyc"]

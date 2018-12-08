@@ -1,3 +1,9 @@
+plugins {
+    id "edu.sc.seis.macAppBundle" version "2.2.1"
+}
+
+apply plugin: 'application'
+apply plugin: "edu.sc.seis.macAppBundle"
 
 def mainClass = "plug.ui2.PlugUI"
 def properties = new HashMap()
@@ -13,6 +19,8 @@ properties.each { key, value ->
 
 distributions {
     main {
+        baseName = 'plug-' + project.name
+        version = project.computedVersion
         contents {
             from(project.file("dist")) {
                 excludes ["*.pyc"]
@@ -28,6 +36,7 @@ macAppBundle {
     properties.each { key, value ->
         javaProperties.put(key, value)
     }
+    dmgName =  'plug-' + project.name + "-mac-" + project.computedVersion
 }
 
 dependencies {
