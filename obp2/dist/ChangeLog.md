@@ -1,3 +1,22 @@
+# Version 0.0.6
+
+Big refactoring of the user interface.
+
+Model-checking :
+
+- it is possible to define a model in the editor directly (for textual specification languages only)
+- added a button to run all *verification tasks*
+- CSV export of the verification results
+
+Simulation :
+
+- The fireable transitions based on the transition relation
+- Button to change the verticality of the simulation trace
+- Improvements on the configuration view (expand tree, show only differences)
+- Deadlock finding from any configuration
+- Added watch expressions on the configurations
+- *go until true/false* for groups of watch expressions
+
 # Version 0.0.5
 
 New features:

@@ -1,7 +1,0 @@
-ab is ab from [Fiacre] "AliceBob1.fcr"
-
-composite x is
-par
-    ab1:ab
-||  ab2:ab
-end composite
