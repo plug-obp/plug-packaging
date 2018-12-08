@@ -1,8 +1,0 @@
-comp is c from [Composition] "multi_language_ex2.comp"
-pingpong is gaMon from [TUML] "PingPong0.uml"
-
-composite x is
-par
-	comp0:comp
-||  pingpong1:pingpong
-end composite
