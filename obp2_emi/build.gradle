@@ -43,8 +43,8 @@ macAppBundle {
 
 dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-via-tcp', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'emi-serializer-c', version: '0.9.3'
-    runtime group: 'fr.ensta-bretagne', name: 'emi-analysis', version: '0.9.3'
+    runtime group: 'fr.ensta-bretagne', name: 'emi-serializer-c', version: '0.9.4'
+    runtime group: 'fr.ensta-bretagne', name: 'emi-analysis', version: '0.9.4'
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version    
     runtime group: 'fr.ensta-bretagne', name: 'plug-core-ui', version: plug.version
