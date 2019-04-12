@@ -17,7 +17,7 @@ apply plugin: 'plug.plugin'
 
 
 def daily = System.getenv("DAILY")
-def computedVersion = daily != null ? "daily" : project.version
+def computedVersion = daily != null ? "daily-" + new Date().format("yy") : project.version
 project.ext.computedVersion =  computedVersion
 
 println "--- Building version:${computedVersion} ---"
