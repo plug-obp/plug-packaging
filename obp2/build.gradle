@@ -18,6 +18,20 @@ properties.each { key, value ->
     applicationDefaultJvmArgs.add("-D${key}=${value}")
 }
 
+
+task createExtraRunApp(type: CreateStartScripts) {
+    mainClassName = "plug.cli.PlugCLI"
+    classpath = startScripts.classpath
+    outputDir = startScripts.outputDir
+    applicationName = 'obp2-headless'
+}
+
+applicationDistribution.into("bin") {
+    duplicatesStrategy= DuplicatesStrategy.EXCLUDE
+    from(createExtraRunApp)
+    fileMode = 0755
+}
+
 distributions {
     main {
         baseName = 'plug-' + project.name
