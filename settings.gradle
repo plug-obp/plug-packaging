@@ -1,13 +1,15 @@
-include 'obp2'
+include 'obp2' //GUI version all platforms
+
+include 'obp2_h' //headless version
+
 include 'simulator'
 
-//support only emi - uml
-include 'obp2_emi'
+include 'obp2_emi' //supports only emi - uml
 
-//supports only the AEFD language
-include 'aefd'
+include 'aefd' //supports only the AEFD language
 
-//experimental
-include 'obp2_jpro'
+include 'obp2_jpro' //experimental web interface
 
-include 'obp2_remote'
+include 'obp2_remote' //supports only remote languages
+
+include 'obp2_remote_h' //supports only remote languages

@@ -57,8 +57,13 @@ macAppBundle {
 }
 
 dependencies {
+    //UI support
+    runtime group: 'fr.ensta-bretagne', name: 'plug-GUI', version: plug.version
+    //LTL support
+    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
+    //runtimes
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lexplicit', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'runtime-fiacre', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'runtime-postmortem-obp', version: plug.version
@@ -66,7 +71,6 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-composite', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-core-ui', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
 }
 

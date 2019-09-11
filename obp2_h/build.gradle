@@ -1,16 +1,10 @@
-plugins {
-    id "edu.sc.seis.macAppBundle" version "2.2.2"
-}
-
 apply plugin: 'application'
-apply plugin: "edu.sc.seis.macAppBundle"
 
-def mainClass = "plug.ui2.simulation.ui.PlugSimulationUI"
+
+def mainClass = "plug.cli.PlugCLI"
 def properties = new HashMap()
-properties.put("apple.laf.useScreenMenuBar", "true")
 
 mainClassName = mainClass
-
 
 //applicationDefaultJvmArgs = ["-Xms16384m", "-Xmx16384m"]
 properties.each { key, value ->
@@ -30,20 +24,9 @@ distributions {
     }
 }
 
-macAppBundle {
-    mainClassName = mainClass
-    icon = "icon/OBP2.icns"
-    properties.each { key, value ->
-        javaProperties.put(key, value)
-    }
-    dmgName =  'plug-' + project.name + "-mac-" + project.computedVersion
-    bundleJRE = false
-    jreHome = ""
-}
-
 dependencies {
     //UI support
-    runtime group: 'fr.ensta-bretagne', name: 'plug-GUI', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-CLI', version: plug.version
     //LTL support
     runtime group: 'fr.ensta-bretagne', name: 'LTL', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
@@ -59,4 +42,4 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
 }
 
-bintrayUpload.dependsOn{[build, createAppZip]}
+bintrayUpload.dependsOn{[build]}
