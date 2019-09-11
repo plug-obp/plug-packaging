@@ -9,3 +9,5 @@ include 'aefd'
 
 //experimental
 include 'obp2_jpro'
+
+include 'obp2_remote'
