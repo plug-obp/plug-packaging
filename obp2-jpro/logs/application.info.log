@@ -1,0 +1,788 @@
+2018-11-09 19:35:40,633 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2018-11-09 19:35:41,038 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - calling init!
+2018-11-09 19:35:41,038 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2018-11-09 19:35:41,038 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Mac OS X
+2018-11-09 19:35:41,038 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 1.8.0_121 Oracle Corporation
+2018-11-09 19:35:41,053 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2018-11-09 19:35:41,070 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2018-11-09 19:35:41,572 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2018-11-09 19:35:41,622 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2018-11-09 19:35:41,660 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Nothing to import
+2018-11-09 19:35:41,730 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - System-Infos: 
+2018-11-09 19:35:41,730 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - javaversion: 1.8.0_121
+2018-11-09 19:35:41,730 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - max ram    : 3641m
+2018-11-09 19:35:41,929 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2018-11-09 19:35:42,679 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 19:35:44,423 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - application requested: 0!default
+2018-11-09 19:35:44,437 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - Creating Application: 0!default
+2018-11-09 19:35:44,439 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 19:35:44,440 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - host          localhost:8080
+2018-11-09 19:35:44,440 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-13 - uri           /app/0!default
+2018-11-09 19:35:46,357 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-8-2-actorRefSource#-1698652587]
+2018-11-09 19:35:47,140 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 858743389
+2018-11-09 19:35:50,010 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - error in process input MouseEventToken(MouseReleased,1789.0,29.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$484(AnimationTimer.java:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:506)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 21 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 28 common frames omitted
+2018-11-09 19:35:52,427 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - error in process input MouseEventToken(MouseReleased,1797.0,16.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$484(AnimationTimer.java:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:506)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 21 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 28 common frames omitted
+2018-11-09 19:35:58,746 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - error in process input MouseEventToken(MouseReleased,1798.0,26.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$484(AnimationTimer.java:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:506)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 21 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 28 common frames omitted
+2018-11-09 19:36:08,067 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - application requested: 0!default
+2018-11-09 19:36:08,068 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - Creating Application: 0!default
+2018-11-09 19:36:08,068 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 19:36:08,068 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - host          localhost:8080
+2018-11-09 19:36:08,068 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-17 - uri           /app/0!default
+2018-11-09 21:10:28,576 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-2 - Slf4jLogger started
+2018-11-09 21:10:28,873 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - calling init!
+2018-11-09 21:10:28,873 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2018-11-09 21:10:28,874 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Mac OS X
+2018-11-09 21:10:28,874 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 1.8.0_121 Oracle Corporation
+2018-11-09 21:10:28,888 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2018-11-09 21:10:28,901 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2018-11-09 21:10:29,271 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2018-11-09 21:10:29,310 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2018-11-09 21:10:29,346 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Nothing to import
+2018-11-09 21:10:29,348 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - System-Infos: 
+2018-11-09 21:10:29,348 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - javaversion: 1.8.0_121
+2018-11-09 21:10:29,355 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - max ram    : 3641m
+2018-11-09 21:10:29,571 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2018-11-09 21:10:30,167 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:10:31,460 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2018-11-09 21:10:31,479 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2018-11-09 21:10:31,481 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:10:31,481 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          localhost:8080
+2018-11-09 21:10:31,481 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2018-11-09 21:10:33,195 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#762674552]
+2018-11-09 21:10:33,922 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 1135591064
+2018-11-09 21:10:40,247 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - error in process input MouseEventToken(MouseReleased,1801.0,27.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$484(AnimationTimer.java:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:506)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 21 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 28 common frames omitted
+2018-11-09 21:10:44,979 [ERROR] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - error in process input MouseEventToken(MouseReleased,1793.0,15.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.lambda$handle$484(AnimationTimer.java:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javafx.animation.AnimationTimer$AnimationTimerReceiver.handle(AnimationTimer.java:56)
+	at com.sun.scenario.animation.AbstractMasterTimer.timePulseImpl(AbstractMasterTimer.java:357)
+	at com.sun.scenario.animation.AbstractMasterTimer$MainLoop.run(AbstractMasterTimer.java:267)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:506)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.pulse(QuantumToolkit.java:490)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.lambda$runToolkit$404(QuantumToolkit.java:319)
+	at com.sun.glass.ui.monocle.RunnableProcessor.runLoop(RunnableProcessor.java:92)
+	at com.sun.glass.ui.monocle.RunnableProcessor.run(RunnableProcessor.java:51)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+	... 21 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: null
+	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.monocle.MonocleView.notifyMouse(MonocleView.java:116)
+	... 28 common frames omitted
+2018-11-09 21:12:09,164 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-11-09 21:12:09,708 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - calling init!
+2018-11-09 21:12:09,708 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2018-11-09 21:12:09,709 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Mac OS X
+2018-11-09 21:12:09,709 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 1.8.0_121 Oracle Corporation
+2018-11-09 21:12:09,729 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2018-11-09 21:12:09,750 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2018-11-09 21:12:10,293 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2018-11-09 21:12:10,341 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2018-11-09 21:12:10,612 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Fri Nov 09 21:12:10 CET 2018
+2018-11-09 21:12:10,721 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - System-Infos: 
+2018-11-09 21:12:10,721 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - javaversion: 1.8.0_121
+2018-11-09 21:12:10,721 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - max ram    : 3641m
+2018-11-09 21:12:10,893 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2018-11-09 21:12:11,902 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:12:13,086 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 943333417!default
+2018-11-09 21:12:13,362 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 943333417!default
+2018-11-09 21:12:13,367 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:12:13,367 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2018-11-09 21:12:13,367 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/943333417!default
+2018-11-09 21:12:14,334 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: 0!default
+2018-11-09 21:12:14,335 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: 0!default
+2018-11-09 21:12:14,336 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:12:14,336 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2018-11-09 21:12:14,336 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/0!default
+2018-11-09 21:12:16,844 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(943333417,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-33315092]
+2018-11-09 21:12:16,974 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#-735463819]
+2018-11-09 21:12:17,865 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 2000914171
+2018-11-09 21:12:17,941 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 1488968296
+2018-11-09 21:12:32,768 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 18629 userid: 1488968296
+2018-11-09 21:13:14,822 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:13:14,920 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:13:17,499 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:13:17,617 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:13:18,890 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:13:18,968 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:13:20,090 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 186
+2018-11-09 21:13:20,188 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 186
+2018-11-09 21:13:21,338 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:13:21,489 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:13:22,368 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:13:22,486 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:13:22,722 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2018-11-09 21:13:22,839 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2018-11-09 21:13:24,523 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:13:24,602 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:16:02,587 [INFO] from com.jpro.activity in Thread-21 - Closing the server -> used memory: 398 MB  -  free system memory: 231 MB
+2018-11-09 21:16:02,589 [INFO] from play.core.server.AkkaHttpServer in Thread-22 - Stopping server...
+2018-11-09 21:16:08,995 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-11-09 21:16:09,517 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - calling init!
+2018-11-09 21:16:09,518 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2018-11-09 21:16:09,518 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Mac OS X
+2018-11-09 21:16:09,518 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 1.8.0_121 Oracle Corporation
+2018-11-09 21:16:09,545 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2018-11-09 21:16:09,572 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2018-11-09 21:16:10,028 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2018-11-09 21:16:10,078 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2018-11-09 21:16:10,331 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Fri Nov 09 21:16:09 CET 2018
+2018-11-09 21:16:10,407 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - System-Infos: 
+2018-11-09 21:16:10,407 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - javaversion: 1.8.0_121
+2018-11-09 21:16:10,407 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - max ram    : 3641m
+2018-11-09 21:16:10,637 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2018-11-09 21:16:11,457 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:16:12,613 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: 709797166!default
+2018-11-09 21:16:12,639 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: 709797166!default
+2018-11-09 21:16:12,647 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:16:12,648 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2018-11-09 21:16:12,648 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/709797166!default
+2018-11-09 21:16:13,402 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - application requested: 0!default
+2018-11-09 21:16:13,403 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - Creating Application: 0!default
+2018-11-09 21:16:13,403 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:16:13,403 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - host          localhost:8080
+2018-11-09 21:16:13,403 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-9 - uri           /app/0!default
+2018-11-09 21:16:15,021 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(709797166,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-1339238444]
+2018-11-09 21:16:15,137 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#1351541508]
+2018-11-09 21:16:16,058 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 89854308
+2018-11-09 21:16:16,117 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 1580372487
+2018-11-09 21:16:21,956 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 18100 userid: 1580372487
+2018-11-09 21:17:31,161 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-11-09 21:17:31,696 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - calling init!
+2018-11-09 21:17:31,696 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2018-11-09 21:17:31,696 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Mac OS X
+2018-11-09 21:17:31,696 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 1.8.0_121 Oracle Corporation
+2018-11-09 21:17:31,715 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2018-11-09 21:17:31,742 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2018-11-09 21:17:32,230 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2018-11-09 21:17:32,280 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2018-11-09 21:17:32,532 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Fri Nov 09 21:17:32 CET 2018
+2018-11-09 21:17:32,613 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - System-Infos: 
+2018-11-09 21:17:32,613 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - javaversion: 1.8.0_121
+2018-11-09 21:17:32,614 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - max ram    : 3641m
+2018-11-09 21:17:32,816 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2018-11-09 21:17:33,578 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:17:34,387 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - application requested: 86790074!default
+2018-11-09 21:17:34,629 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - Creating Application: 86790074!default
+2018-11-09 21:17:34,636 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:17:34,636 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - host          localhost:8080
+2018-11-09 21:17:34,636 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-2 - uri           /app/86790074!default
+2018-11-09 21:17:35,211 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: 0!default
+2018-11-09 21:17:35,212 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: 0!default
+2018-11-09 21:17:35,212 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:17:35,212 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2018-11-09 21:17:35,212 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/0!default
+2018-11-09 21:17:36,749 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(86790074,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#775935446]
+2018-11-09 21:17:36,864 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#-798490216]
+2018-11-09 21:17:37,771 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 337659123
+2018-11-09 21:17:37,827 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 609846721
+2018-11-09 21:17:43,550 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 18100 userid: 609846721
+2018-11-09 21:17:50,248 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:17:50,346 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:17:51,427 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:17:51,526 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:17:52,390 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:17:52,487 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:17:53,150 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 186
+2018-11-09 21:17:53,247 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 186
+2018-11-09 21:17:55,857 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:17:55,976 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 219
+2018-11-09 21:17:57,261 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:17:57,397 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 221
+2018-11-09 21:17:57,709 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2018-11-09 21:17:57,806 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 187
+2018-11-09 21:17:58,760 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:17:58,839 [WARN] from com.jpro.meta.tk.SceneInputListener in JavaFX Application Thread - Unknown Keycode: 220
+2018-11-09 21:21:33,457 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-3 - Slf4jLogger started
+2018-11-09 21:21:33,834 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - calling init!
+2018-11-09 21:21:33,834 [INFO] from com.jpro.activity in Thread-0 - Starting the server
+2018-11-09 21:21:33,834 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - OS: Mac OS X
+2018-11-09 21:21:33,834 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - JVM: 1.8.0_121 Oracle Corporation
+2018-11-09 21:21:33,869 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - installed SLF4JBridge
+2018-11-09 21:21:33,884 [INFO] from com.jpro.internal.server.MonocleInitializer$ in Thread-0 - screen: null
+2018-11-09 21:21:34,250 [INFO] from com.jpro.internal.server.Initializer$ in Thread-0 - finished init!
+2018-11-09 21:21:34,290 [INFO] from com.jpro.internal.chart.model.DynamicDataModel in JavaFX Application Thread - Started Monitoring chart data...
+2018-11-09 21:21:34,532 [INFO] from com.jpro.internal.chart.model.ChartJSONImExporter in JavaFX Application Thread - Imported chart data Fri Nov 09 21:21:34 CET 2018
+2018-11-09 21:21:34,610 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - System-Infos: 
+2018-11-09 21:21:34,610 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - javaversion: 1.8.0_121
+2018-11-09 21:21:34,610 [INFO] from com.jpro.internal.stats.ServerInfo$ in JavaFX Application Thread - max ram    : 3641m
+2018-11-09 21:21:34,785 [INFO] from play.api.Play in Thread-0 - Application started (Prod)
+2018-11-09 21:21:35,467 [INFO] from play.core.server.AkkaHttpServer in Thread-0 - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:21:45,557 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 57589771!default
+2018-11-09 21:21:45,579 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 57589771!default
+2018-11-09 21:21:45,584 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:21:45,586 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          localhost:8080
+2018-11-09 21:21:45,586 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/57589771!default
+2018-11-09 21:21:47,544 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(57589771,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-3-2-actorRefSource#-1030664054]
+2018-11-09 21:21:48,311 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 1769562393
+2018-11-09 21:21:50,535 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-3 - jpro.plainFile - Couldn't get resource for: 'jpro/html/test/index.html'
+2018-11-09 21:21:50,608 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 21:21:50,608 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2018-11-09 21:21:50,609 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Nov 09 21:21:50 CET 2018      
+2018-11-09 21:21:50,609 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.034 
+2018-11-09 21:21:50,609 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.022  
+2018-11-09 21:21:50,611 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2018-11-09 21:21:50,613 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2018-11-09 21:21:50,613 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 139498
+2018-11-09 21:21:50,613 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 30791
+2018-11-09 21:21:50,613 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 21:21:50,998 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-9 - jpro.plainFile - Couldn't get resource for: 'jpro/html/favicon.ico'
+2018-11-09 21:21:52,802 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - application requested: 0!default
+2018-11-09 21:21:52,802 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - Creating Application: 0!default
+2018-11-09 21:21:52,803 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:21:52,803 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - host          localhost:8080
+2018-11-09 21:21:52,803 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-3 - uri           /app/0!default
+2018-11-09 21:21:53,066 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-12-2-actorRefSource#-2070980533]
+2018-11-09 21:21:53,416 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 1678658811
+2018-11-09 21:21:54,992 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-10 - jpro.plainFile - Couldn't get resource for: 'jpro/html/test/fullscreen/index.html'
+2018-11-09 21:21:55,037 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Nov 09 21:21:55 CET 2018      
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.013 
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.025  
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 138986
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 30535
+2018-11-09 21:21:55,038 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 21:21:56,731 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: 0!default
+2018-11-09 21:21:56,731 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: 0!default
+2018-11-09 21:21:56,731 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:21:56,732 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2018-11-09 21:21:56,732 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/0!default
+2018-11-09 21:21:56,896 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-16-2-actorRefSource#-1658785041]
+2018-11-09 21:21:57,079 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2018-11-09 21:21:57,198 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 1903883948
+2018-11-09 21:22:00,719 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2018-11-09 23:27:35,345 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - application requested: 0!default
+2018-11-09 23:27:35,347 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - Creating Application: 0!default
+2018-11-09 23:27:35,348 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:35,348 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - host          localhost:8080
+2018-11-09 23:27:35,348 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-6 - uri           /app/0!default
+2018-11-09 23:27:35,604 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-23-2-actorRefSource#92558312]
+2018-11-09 23:27:35,999 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 171222072
+2018-11-09 23:27:36,560 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:36,560 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Nov 09 23:27:36 CET 2018      
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.021 
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.039  
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 138144
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 30515
+2018-11-09 23:27:36,561 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:36,650 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - application requested: 943333417!default
+2018-11-09 23:27:36,651 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - Creating Application: 943333417!default
+2018-11-09 23:27:36,651 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:36,651 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - host          localhost:8080
+2018-11-09 23:27:36,651 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-8 - uri           /app/943333417!default
+2018-11-09 23:27:36,918 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-11 - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF7999706092819512526.tmp (No such file or directory)
+2018-11-09 23:27:36,924 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-2 - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF7999706092819512526.tmp (No such file or directory)
+2018-11-09 23:27:36,930 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-11 - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF7999706092819512526.tmp (No such file or directory)
+2018-11-09 23:27:37,080 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(943333417,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-26-2-actorRefSource#1488257555]
+2018-11-09 23:27:37,354 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 707919636
+2018-11-09 23:27:37,457 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:37,457 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2018-11-09 23:27:37,458 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Nov 09 23:27:37 CET 2018      
+2018-11-09 23:27:37,458 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.022 
+2018-11-09 23:27:37,458 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.001  
+2018-11-09 23:27:37,458 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2018-11-09 23:27:37,458 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2018-11-09 23:27:37,458 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 138986
+2018-11-09 23:27:37,458 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 30574
+2018-11-09 23:27:37,459 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:37,500 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - application requested: 709797166!default
+2018-11-09 23:27:37,500 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - Creating Application: 709797166!default
+2018-11-09 23:27:37,501 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:37,501 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - host          localhost:8080
+2018-11-09 23:27:37,501 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-4 - uri           /app/709797166!default
+2018-11-09 23:27:37,908 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(709797166,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-29-2-actorRefSource#333015688]
+2018-11-09 23:27:38,133 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 1309609775
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Nov 09 23:27:38 CET 2018      
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.063 
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.070  
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 138986
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 30561
+2018-11-09 23:27:38,580 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:38,708 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - application requested: 86790074!default
+2018-11-09 23:27:38,709 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - Creating Application: 86790074!default
+2018-11-09 23:27:38,709 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:38,709 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - host          localhost:8080
+2018-11-09 23:27:38,709 [INFO] from controllers.jpro in application-akka.actor.default-dispatcher-10 - uri           /app/86790074!default
+2018-11-09 23:27:38,915 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-8 - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF1367020570983322641.tmp (No such file or directory)
+2018-11-09 23:27:38,920 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-10 - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF1367020570983322641.tmp (No such file or directory)
+2018-11-09 23:27:38,924 [WARN] from controllers.jpro in application-akka.actor.default-dispatcher-10 - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF1367020570983322641.tmp (No such file or directory)
+2018-11-09 23:27:39,059 [INFO] from com.jpro.internal.server.ViewSerializerActor in JavaFX Application Thread - appdef: AppByID(86790074,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-32-2-actorRefSource#2047804329]
+2018-11-09 23:27:39,340 [INFO] from com.jpro.JS in JavaFX Application Thread - received msg: new MainID: 3991 userid: 626962986
+2018-11-09 23:27:40,821 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:40,822 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2018-11-09 23:27:40,822 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Fri Nov 09 23:27:40 CET 2018      
+2018-11-09 23:27:40,822 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.033 
+2018-11-09 23:27:40,822 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.021  
+2018-11-09 23:27:40,822 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2018-11-09 23:27:40,822 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2018-11-09 23:27:40,822 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 138986
+2018-11-09 23:27:40,823 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 30571
+2018-11-09 23:27:40,823 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-09 23:27:41,927 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2018-11-09 23:27:42,588 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2018-11-09 23:27:43,815 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2018-11-09 23:27:46,419 [INFO] from com.jpro.internal.communicator.InstanceImpl in JavaFX Application Thread - closing window!
+2018-11-10 14:08:43,506 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-10 14:08:43,509 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - Application closed:
+2018-11-10 14:08:43,517 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - startTime      : Sat Nov 10 14:08:43 CET 2018      
+2018-11-10 14:08:43,518 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageLatency : 00:00:00.061 
+2018-11-10 14:08:43,520 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - averageJitter  : 00:00:00.071  
+2018-11-10 14:08:43,520 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateServer: 00:00:00.000
+2018-11-10 14:08:43,521 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - framerateClient: 00:00:00.000
+2018-11-10 14:08:43,521 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - raw            : 3977884
+2018-11-10 14:08:43,521 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - zipped         : 1301350
+2018-11-10 14:08:43,521 [INFO] from com.jpro.internal.stats.ViewInfo$ in JavaFX Application Thread - 
+2018-11-10 14:19:11,925 [INFO] from com.jpro.activity in Thread-21 - Closing the server -> used memory: 137 MB  -  free system memory: 22 MB

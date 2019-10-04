@@ -19,7 +19,7 @@ properties.each { key, value ->
 
 distributions {
     main {
-        baseName = 'plug-' + project.name
+        baseName = project.name
         version = project.computedVersion
         contents {
             from(project.file("dist")) {
@@ -36,7 +36,7 @@ macAppBundle {
     properties.each { key, value ->
         javaProperties.put(key, value)
     }
-    dmgName =  'plug-' + project.name + "-mac-" + project.computedVersion
+    dmgName = project.name + "-osx-" + project.computedVersion
     bundleJRE = false
     jreHome = ""
 }

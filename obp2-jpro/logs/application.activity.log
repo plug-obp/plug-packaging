@@ -1,0 +1,10 @@
+2018-11-09 19:35:41,038 [INFO] in Thread-0 - Starting the server
+2018-11-09 21:10:28,873 [INFO] in Thread-0 - Starting the server
+2018-11-09 21:11:36,631 [INFO] in Thread-21 - Closing the server -> used memory: 297 MB  -  free system memory: 34 MB
+2018-11-09 21:12:09,708 [INFO] in Thread-0 - Starting the server
+2018-11-09 21:16:02,587 [INFO] in Thread-21 - Closing the server -> used memory: 398 MB  -  free system memory: 231 MB
+2018-11-09 21:16:09,518 [INFO] in Thread-0 - Starting the server
+2018-11-09 21:17:31,696 [INFO] in Thread-0 - Starting the server
+2018-11-09 21:21:28,898 [INFO] in Thread-21 - Closing the server -> used memory: 394 MB  -  free system memory: 187 MB
+2018-11-09 21:21:33,834 [INFO] in Thread-0 - Starting the server
+2018-11-10 14:19:11,925 [INFO] in Thread-21 - Closing the server -> used memory: 137 MB  -  free system memory: 22 MB

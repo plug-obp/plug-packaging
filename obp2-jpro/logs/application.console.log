@@ -1,0 +1,520 @@
+2018-11-09 19:35:41,043 [INFO] in Thread-0 -  
+2018-11-09 19:35:41,053 [INFO] in Thread-0 - redirected OUT / ERR
+2018-11-09 19:35:41,054 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2018-11-09 19:35:41,070 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2018-11-09 19:35:41,166 [INFO] in JavaFX-Launcher - Warning: Quantum will not submit render jobs, nothing should draw
+2018-11-09 19:35:41,572 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2018-11-09 19:35:41,622 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2018-11-09 19:35:41,660 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Nothing to import
+2018-11-09 19:35:41,730 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - System-Infos: 
+2018-11-09 19:35:41,730 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - javaversion: 1.8.0_121
+2018-11-09 19:35:41,730 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - max ram    : 3641m
+2018-11-09 19:35:41,930 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] play.api.Play - Application started (Prod)
+2018-11-09 19:35:42,679 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 19:35:44,424 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 19:35:44,437 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 19:35:44,440 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 19:35:44,440 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 19:35:44,440 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 19:35:45,127 [INFO] in JavaFX Application Thread - Loading Buchi language plugin
+2018-11-09 19:35:45,129 [INFO] in JavaFX Application Thread - Loading Explicit language plugin
+2018-11-09 19:35:45,132 [INFO] in JavaFX Application Thread - Loading Fiacre language plugin
+2018-11-09 19:35:45,137 [INFO] in JavaFX Application Thread - Loading OBP result language plugin
+2018-11-09 19:35:45,140 [INFO] in JavaFX Application Thread - Loading SpinJa language plugin
+2018-11-09 19:35:45,143 [INFO] in JavaFX Application Thread - Loading Composition language plugin
+2018-11-09 19:35:45,145 [INFO] in JavaFX Application Thread - Loading TUML language plugin
+2018-11-09 19:35:45,147 [INFO] in JavaFX Application Thread - Loading Remote language plugin
+2018-11-09 19:35:45,149 [INFO] in JavaFX Application Thread - Loading TLA language plugin
+2018-11-09 19:35:46,387 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-8-2-actorRefSource#-1698652587]
+2018-11-09 19:35:47,141 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 858743389
+2018-11-09 19:35:50,014 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[31merror[0m] c.j.m.t.SceneInputListener - error in process input MouseEventToken(MouseReleased,1789.0,29.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+2018-11-09 19:35:50,015 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - java.lang.reflect.InvocationTargetException: null
+2018-11-09 19:35:50,016 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2018-11-09 19:35:50,017 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 19:35:50,018 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 19:35:50,020 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 19:35:50,022 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+2018-11-09 19:35:50,023 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+2018-11-09 19:35:50,025 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+2018-11-09 19:35:50,027 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+2018-11-09 19:35:50,029 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+2018-11-09 19:35:50,031 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+2018-11-09 19:35:50,033 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.reflect.InvocationTargetException: null
+2018-11-09 19:35:50,034 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+2018-11-09 19:35:50,037 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 19:35:50,038 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 19:35:50,040 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 19:35:50,043 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+2018-11-09 19:35:50,046 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+2018-11-09 19:35:50,048 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+2018-11-09 19:35:50,050 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2018-11-09 19:35:50,055 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 19:35:50,057 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 19:35:50,060 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.UnsupportedOperationException: null
+2018-11-09 19:35:50,087 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+2018-11-09 19:35:50,090 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+2018-11-09 19:35:50,092 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+2018-11-09 19:35:50,093 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+2018-11-09 19:35:50,094 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+2018-11-09 19:35:50,096 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+2018-11-09 19:35:50,098 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+2018-11-09 19:35:50,100 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+2018-11-09 19:35:50,102 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+2018-11-09 19:35:50,104 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+2018-11-09 19:35:52,431 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[31merror[0m] c.j.m.t.SceneInputListener - error in process input MouseEventToken(MouseReleased,1797.0,16.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+2018-11-09 19:35:52,433 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - java.lang.reflect.InvocationTargetException: null
+2018-11-09 19:35:52,435 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2018-11-09 19:35:52,437 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 19:35:52,438 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 19:35:52,441 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 19:35:52,443 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+2018-11-09 19:35:52,445 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+2018-11-09 19:35:52,447 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+2018-11-09 19:35:52,450 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+2018-11-09 19:35:52,452 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+2018-11-09 19:35:52,455 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+2018-11-09 19:35:52,456 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.reflect.InvocationTargetException: null
+2018-11-09 19:35:52,458 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+2018-11-09 19:35:52,460 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 19:35:52,462 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 19:35:52,465 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 19:35:52,467 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+2018-11-09 19:35:52,471 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+2018-11-09 19:35:52,474 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+2018-11-09 19:35:52,476 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor12.invoke(Unknown Source)
+2018-11-09 19:35:52,480 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 19:35:52,482 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 19:35:52,485 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.UnsupportedOperationException: null
+2018-11-09 19:35:52,491 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+2018-11-09 19:35:52,496 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+2018-11-09 19:35:52,500 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+2018-11-09 19:35:52,503 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+2018-11-09 19:35:52,506 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+2018-11-09 19:35:52,510 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+2018-11-09 19:35:52,513 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+2018-11-09 19:35:52,517 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+2018-11-09 19:35:52,522 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+2018-11-09 19:35:52,526 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+2018-11-09 19:35:58,778 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[31merror[0m] c.j.m.t.SceneInputListener - error in process input MouseEventToken(MouseReleased,1798.0,26.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+2018-11-09 19:35:58,785 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - java.lang.reflect.InvocationTargetException: null
+2018-11-09 21:10:28,878 [INFO] in Thread-0 -  
+2018-11-09 21:10:28,888 [INFO] in Thread-0 - redirected OUT / ERR
+2018-11-09 21:10:28,888 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2018-11-09 21:10:28,901 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2018-11-09 21:10:28,981 [INFO] in JavaFX-Launcher - Warning: Quantum will not submit render jobs, nothing should draw
+2018-11-09 21:10:29,271 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2018-11-09 21:10:29,310 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2018-11-09 21:10:29,347 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Nothing to import
+2018-11-09 21:10:29,348 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - System-Infos: 
+2018-11-09 21:10:29,349 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - javaversion: 1.8.0_121
+2018-11-09 21:10:29,355 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - max ram    : 3641m
+2018-11-09 21:10:29,571 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] play.api.Play - Application started (Prod)
+2018-11-09 21:10:30,167 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:10:31,464 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 21:10:31,479 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 21:10:31,481 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:10:31,482 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:10:31,482 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 21:10:32,058 [INFO] in JavaFX Application Thread - Loading Buchi language plugin
+2018-11-09 21:10:32,060 [INFO] in JavaFX Application Thread - Loading Explicit language plugin
+2018-11-09 21:10:32,062 [INFO] in JavaFX Application Thread - Loading Fiacre language plugin
+2018-11-09 21:10:32,065 [INFO] in JavaFX Application Thread - Loading OBP result language plugin
+2018-11-09 21:10:32,068 [INFO] in JavaFX Application Thread - Loading SpinJa language plugin
+2018-11-09 21:10:32,070 [INFO] in JavaFX Application Thread - Loading Composition language plugin
+2018-11-09 21:10:32,072 [INFO] in JavaFX Application Thread - Loading TUML language plugin
+2018-11-09 21:10:32,074 [INFO] in JavaFX Application Thread - Loading Remote language plugin
+2018-11-09 21:10:32,076 [INFO] in JavaFX Application Thread - Loading TLA language plugin
+2018-11-09 21:10:33,207 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#762674552]
+2018-11-09 21:10:33,925 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 1135591064
+2018-11-09 21:10:40,251 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[31merror[0m] c.j.m.t.SceneInputListener - error in process input MouseEventToken(MouseReleased,1801.0,27.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+2018-11-09 21:10:40,252 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - java.lang.reflect.InvocationTargetException: null
+2018-11-09 21:10:40,253 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+2018-11-09 21:10:40,255 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 21:10:40,255 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 21:10:40,257 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 21:10:40,259 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+2018-11-09 21:10:40,260 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+2018-11-09 21:10:40,262 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+2018-11-09 21:10:40,264 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+2018-11-09 21:10:40,266 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+2018-11-09 21:10:40,268 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+2018-11-09 21:10:40,270 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.reflect.InvocationTargetException: null
+2018-11-09 21:10:40,272 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+2018-11-09 21:10:40,275 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 21:10:40,276 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 21:10:40,278 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 21:10:40,281 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+2018-11-09 21:10:40,283 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+2018-11-09 21:10:40,286 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+2018-11-09 21:10:40,288 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+2018-11-09 21:10:40,293 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 21:10:40,295 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 21:10:40,297 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.UnsupportedOperationException: null
+2018-11-09 21:10:40,301 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+2018-11-09 21:10:40,304 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+2018-11-09 21:10:40,331 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+2018-11-09 21:10:40,333 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+2018-11-09 21:10:40,337 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+2018-11-09 21:10:40,341 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+2018-11-09 21:10:40,346 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+2018-11-09 21:10:40,349 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+2018-11-09 21:10:40,351 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+2018-11-09 21:10:40,354 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+2018-11-09 21:10:44,983 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[31merror[0m] c.j.m.t.SceneInputListener - error in process input MouseEventToken(MouseReleased,1793.0,15.0,MouseButtonPrimary,false,false,false,false,false,false,false,false)
+2018-11-09 21:10:44,985 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - java.lang.reflect.InvocationTargetException: null
+2018-11-09 21:10:44,986 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+2018-11-09 21:10:44,989 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 21:10:44,990 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 21:10:44,992 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 21:10:44,994 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInputInScene(SceneInputListener.scala:111)
+2018-11-09 21:10:44,997 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.processInput(SceneInputListener.scala:66)
+2018-11-09 21:10:44,999 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.jpro.meta.tk.SceneInputListener.$anonfun$new$3(SceneInputListener.scala:46)
+2018-11-09 21:10:45,001 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent.$anonfun$runAsAnimation$1(CoreTimeEvent.scala:59)
+2018-11-09 21:10:45,004 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.evaluateTasks$1(CoreTimeEvent.scala:41)
+2018-11-09 21:10:45,008 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.cores.standard.parts.CoreTimeEvent$$anon$2.handle(CoreTimeEvent.scala:49)
+2018-11-09 21:10:45,010 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.reflect.InvocationTargetException: null
+2018-11-09 21:10:45,012 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+2018-11-09 21:10:45,014 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 21:10:45,015 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 21:10:45,018 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at simplefx.util.ReflectionUtil$UseReflection.applyDynamic(ReflectionUtil.scala:20)
+2018-11-09 21:10:45,021 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.notifyMouse(NativeMouseInput.scala:322)
+2018-11-09 21:10:45,025 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.postMouseEvent(NativeMouseInput.scala:222)
+2018-11-09 21:10:45,029 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.input.fork.NativeMouseInput.setState(NativeMouseInput.scala:182)
+2018-11-09 21:10:45,031 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+2018-11-09 21:10:45,034 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2018-11-09 21:10:45,036 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at java.lang.reflect.Method.invoke(Method.java:498)
+2018-11-09 21:10:45,038 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - Caused by: java.lang.UnsupportedOperationException: null
+2018-11-09 21:10:45,042 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.monocle.MonocleApplication.staticCommonDialogs_showFileChooser(MonocleApplication.java:293)
+2018-11-09 21:10:45,045 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.glass.ui.CommonDialogs.showFileChooser(CommonDialogs.java:212)
+2018-11-09 21:10:45,048 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.tk.quantum.QuantumToolkit.showFileChooser(QuantumToolkit.java:1496)
+2018-11-09 21:10:45,052 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showDialog(FileChooser.java:416)
+2018-11-09 21:10:45,057 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at javafx.stage.FileChooser.showOpenDialog(FileChooser.java:350)
+2018-11-09 21:10:45,061 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at plug.ui2.model_view.LoadFilePane.selectFilePath(LoadFilePane.java:74)
+2018-11-09 21:10:45,065 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+2018-11-09 21:10:45,068 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+2018-11-09 21:10:45,074 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+2018-11-09 21:10:45,081 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - 	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+2018-11-09 21:12:09,715 [INFO] in Thread-0 -  
+2018-11-09 21:12:09,729 [INFO] in Thread-0 - redirected OUT / ERR
+2018-11-09 21:12:09,729 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2018-11-09 21:12:09,751 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2018-11-09 21:12:09,864 [INFO] in JavaFX-Launcher - Warning: Quantum will not submit render jobs, nothing should draw
+2018-11-09 21:12:10,293 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2018-11-09 21:12:10,341 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2018-11-09 21:12:10,612 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Fri Nov 09 21:12:10 CET 2018
+2018-11-09 21:12:10,721 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - System-Infos: 
+2018-11-09 21:12:10,721 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - javaversion: 1.8.0_121
+2018-11-09 21:12:10,721 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - max ram    : 3641m
+2018-11-09 21:12:10,893 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] play.api.Play - Application started (Prod)
+2018-11-09 21:12:11,903 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:12:13,120 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 943333417!default
+2018-11-09 21:12:13,362 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 943333417!default
+2018-11-09 21:12:13,367 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:12:13,367 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:12:13,368 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/943333417!default
+2018-11-09 21:12:14,246 [INFO] in JavaFX Application Thread - Loading Buchi language plugin
+2018-11-09 21:12:14,253 [INFO] in JavaFX Application Thread - Loading Explicit language plugin
+2018-11-09 21:12:14,269 [INFO] in JavaFX Application Thread - Loading Fiacre language plugin
+2018-11-09 21:12:14,274 [INFO] in JavaFX Application Thread - Loading OBP result language plugin
+2018-11-09 21:12:14,282 [INFO] in JavaFX Application Thread - Loading SpinJa language plugin
+2018-11-09 21:12:14,290 [INFO] in JavaFX Application Thread - Loading Composition language plugin
+2018-11-09 21:12:14,293 [INFO] in JavaFX Application Thread - Loading TUML language plugin
+2018-11-09 21:12:14,297 [INFO] in JavaFX Application Thread - Loading Remote language plugin
+2018-11-09 21:12:14,306 [INFO] in JavaFX Application Thread - Loading TLA language plugin
+2018-11-09 21:12:14,337 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 21:12:14,340 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 21:12:14,342 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:12:14,345 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:12:14,349 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 21:12:16,881 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(943333417,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-33315092]
+2018-11-09 21:12:16,987 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#-735463819]
+2018-11-09 21:12:17,869 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 2000914171
+2018-11-09 21:12:17,944 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 1488968296
+2018-11-09 21:12:24,892 [INFO] in JavaFX Application Thread - Exec: [ecj  -1.8 -d /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/bin -warn:none /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/java]
+2018-11-09 21:12:24,896 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/classes/java/main
+2018-11-09 21:12:24,898 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/resources/main
+2018-11-09 21:12:27,419 [INFO] in JavaFX Application Thread - Exec: [ecj  -1.8 -d /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/bin -warn:none /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/java]
+2018-11-09 21:12:27,423 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/classes/java/main
+2018-11-09 21:12:27,427 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/resources/main
+2018-11-09 21:12:28,976 [INFO] in JavaFX Application Thread - Exec: [ecj  -1.8 -d /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/bin -warn:none /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/java]
+2018-11-09 21:12:28,986 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/classes/java/main
+2018-11-09 21:12:28,995 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/resources/main
+2018-11-09 21:12:30,561 [INFO] in JavaFX Application Thread - Exec: [ecj  -1.8 -d /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/bin -warn:none /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/java]
+2018-11-09 21:12:30,570 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/classes/java/main
+2018-11-09 21:12:30,577 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/resources/main
+2018-11-09 21:12:32,773 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 18629 userid: 1488968296
+2018-11-09 21:13:14,826 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:13:14,924 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:13:17,502 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:13:17,621 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:13:18,894 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:13:18,971 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:13:20,095 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 186
+2018-11-09 21:13:20,195 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 186
+2018-11-09 21:13:21,341 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:13:21,494 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:13:22,372 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:13:22,490 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:13:22,725 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2018-11-09 21:13:22,842 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2018-11-09 21:13:24,526 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:13:24,606 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:16:02,629 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro.activity - Closing the server -> used memory: 398 MB  -  free system memory: 231 MB
+2018-11-09 21:16:02,645 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] p.c.s.AkkaHttpServer - Stopping server...
+2018-11-09 21:16:09,527 [INFO] in Thread-0 -  
+2018-11-09 21:16:09,544 [INFO] in Thread-0 - redirected OUT / ERR
+2018-11-09 21:16:09,546 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2018-11-09 21:16:09,572 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2018-11-09 21:16:09,668 [INFO] in JavaFX-Launcher - Warning: Quantum will not submit render jobs, nothing should draw
+2018-11-09 21:16:10,028 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2018-11-09 21:16:10,079 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2018-11-09 21:16:10,331 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Fri Nov 09 21:16:09 CET 2018
+2018-11-09 21:16:10,407 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - System-Infos: 
+2018-11-09 21:16:10,407 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - javaversion: 1.8.0_121
+2018-11-09 21:16:10,407 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - max ram    : 3641m
+2018-11-09 21:16:10,637 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] play.api.Play - Application started (Prod)
+2018-11-09 21:16:11,458 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:16:12,618 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 709797166!default
+2018-11-09 21:16:12,640 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 709797166!default
+2018-11-09 21:16:12,648 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:16:12,648 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:16:12,648 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/709797166!default
+2018-11-09 21:16:13,407 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 21:16:13,410 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 21:16:13,413 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:16:13,416 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:16:13,418 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 21:16:13,433 [INFO] in JavaFX Application Thread - Loading Buchi language plugin
+2018-11-09 21:16:13,435 [INFO] in JavaFX Application Thread - Loading Explicit language plugin
+2018-11-09 21:16:13,439 [INFO] in JavaFX Application Thread - Loading Fiacre language plugin
+2018-11-09 21:16:13,443 [INFO] in JavaFX Application Thread - Loading OBP result language plugin
+2018-11-09 21:16:13,446 [INFO] in JavaFX Application Thread - Loading SpinJa language plugin
+2018-11-09 21:16:13,448 [INFO] in JavaFX Application Thread - Loading Composition language plugin
+2018-11-09 21:16:13,451 [INFO] in JavaFX Application Thread - Loading TUML language plugin
+2018-11-09 21:16:13,455 [INFO] in JavaFX Application Thread - Loading Remote language plugin
+2018-11-09 21:16:13,458 [INFO] in JavaFX Application Thread - Loading TLA language plugin
+2018-11-09 21:16:15,067 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(709797166,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#-1339238444]
+2018-11-09 21:16:15,150 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#1351541508]
+2018-11-09 21:16:16,062 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 89854308
+2018-11-09 21:16:16,124 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 1580372487
+2018-11-09 21:16:21,182 [INFO] in JavaFX Application Thread - Exec: [ecj  -1.8 -d /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/bin -warn:none /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/java]
+2018-11-09 21:16:21,185 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/classes/java/main
+2018-11-09 21:16:21,188 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/resources/main
+2018-11-09 21:16:21,959 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 18100 userid: 1580372487
+2018-11-09 21:17:31,704 [INFO] in Thread-0 -  
+2018-11-09 21:17:31,715 [INFO] in Thread-0 - redirected OUT / ERR
+2018-11-09 21:17:31,715 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2018-11-09 21:17:31,742 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2018-11-09 21:17:31,844 [INFO] in JavaFX-Launcher - Warning: Quantum will not submit render jobs, nothing should draw
+2018-11-09 21:17:32,230 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2018-11-09 21:17:32,280 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2018-11-09 21:17:32,532 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Fri Nov 09 21:17:32 CET 2018
+2018-11-09 21:17:32,614 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - System-Infos: 
+2018-11-09 21:17:32,614 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - javaversion: 1.8.0_121
+2018-11-09 21:17:32,614 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - max ram    : 3641m
+2018-11-09 21:17:32,817 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] play.api.Play - Application started (Prod)
+2018-11-09 21:17:33,578 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:17:34,389 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 86790074!default
+2018-11-09 21:17:34,630 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 86790074!default
+2018-11-09 21:17:34,636 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:17:34,637 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:17:34,637 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/86790074!default
+2018-11-09 21:17:35,211 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 21:17:35,212 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 21:17:35,212 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:17:35,212 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:17:35,212 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 21:17:35,277 [INFO] in JavaFX Application Thread - Loading Buchi language plugin
+2018-11-09 21:17:35,280 [INFO] in JavaFX Application Thread - Loading Explicit language plugin
+2018-11-09 21:17:35,285 [INFO] in JavaFX Application Thread - Loading Fiacre language plugin
+2018-11-09 21:17:35,288 [INFO] in JavaFX Application Thread - Loading OBP result language plugin
+2018-11-09 21:17:35,290 [INFO] in JavaFX Application Thread - Loading SpinJa language plugin
+2018-11-09 21:17:35,292 [INFO] in JavaFX Application Thread - Loading Composition language plugin
+2018-11-09 21:17:35,294 [INFO] in JavaFX Application Thread - Loading TUML language plugin
+2018-11-09 21:17:35,296 [INFO] in JavaFX Application Thread - Loading Remote language plugin
+2018-11-09 21:17:35,298 [INFO] in JavaFX Application Thread - Loading TLA language plugin
+2018-11-09 21:17:36,783 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(86790074,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-6-2-actorRefSource#775935446]
+2018-11-09 21:17:36,875 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-9-2-actorRefSource#-798490216]
+2018-11-09 21:17:37,774 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 337659123
+2018-11-09 21:17:37,829 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 609846721
+2018-11-09 21:17:42,723 [INFO] in JavaFX Application Thread - Exec: [ecj  -1.8 -d /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/bin -warn:none /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/java]
+2018-11-09 21:17:42,726 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/classes/java/main
+2018-11-09 21:17:42,730 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/resources/main
+2018-11-09 21:17:43,553 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 18100 userid: 609846721
+2018-11-09 21:17:50,249 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:17:50,349 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:17:51,429 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:17:51,530 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:17:52,391 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:17:52,489 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:17:53,152 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 186
+2018-11-09 21:17:53,249 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 186
+2018-11-09 21:17:55,859 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:17:55,980 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 219
+2018-11-09 21:17:57,264 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:17:57,401 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 221
+2018-11-09 21:17:57,711 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2018-11-09 21:17:57,808 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 187
+2018-11-09 21:17:58,763 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:17:58,842 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.j.m.t.SceneInputListener - Unknown Keycode: 220
+2018-11-09 21:21:28,909 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro.activity - Closing the server -> used memory: 394 MB  -  free system memory: 187 MB
+2018-11-09 21:21:33,852 [INFO] in Thread-0 -  
+2018-11-09 21:21:33,869 [INFO] in Thread-0 - redirected OUT / ERR
+2018-11-09 21:21:33,870 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - installed SLF4JBridge
+2018-11-09 21:21:33,885 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.MonocleInitializer$ - screen: null
+2018-11-09 21:21:33,966 [INFO] in JavaFX-Launcher - Warning: Quantum will not submit render jobs, nothing should draw
+2018-11-09 21:21:34,250 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.Initializer$ - finished init!
+2018-11-09 21:21:34,290 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.DynamicDataModel - Started Monitoring chart data...
+2018-11-09 21:21:34,532 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.m.ChartJSONImExporter - Imported chart data Fri Nov 09 21:21:34 CET 2018
+2018-11-09 21:21:34,610 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - System-Infos: 
+2018-11-09 21:21:34,610 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - javaversion: 1.8.0_121
+2018-11-09 21:21:34,610 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ServerInfo$ - max ram    : 3641m
+2018-11-09 21:21:34,785 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] play.api.Play - Application started (Prod)
+2018-11-09 21:21:35,467 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] p.c.s.AkkaHttpServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8080
+2018-11-09 21:21:45,558 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 57589771!default
+2018-11-09 21:21:45,580 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 57589771!default
+2018-11-09 21:21:45,584 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:21:45,586 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:21:45,587 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/57589771!default
+2018-11-09 21:21:46,154 [INFO] in JavaFX Application Thread - Loading Buchi language plugin
+2018-11-09 21:21:46,156 [INFO] in JavaFX Application Thread - Loading Explicit language plugin
+2018-11-09 21:21:46,158 [INFO] in JavaFX Application Thread - Loading Fiacre language plugin
+2018-11-09 21:21:46,162 [INFO] in JavaFX Application Thread - Loading OBP result language plugin
+2018-11-09 21:21:46,165 [INFO] in JavaFX Application Thread - Loading SpinJa language plugin
+2018-11-09 21:21:46,168 [INFO] in JavaFX Application Thread - Loading Composition language plugin
+2018-11-09 21:21:46,170 [INFO] in JavaFX Application Thread - Loading TUML language plugin
+2018-11-09 21:21:46,172 [INFO] in JavaFX Application Thread - Loading Remote language plugin
+2018-11-09 21:21:46,174 [INFO] in JavaFX Application Thread - Loading TLA language plugin
+2018-11-09 21:21:47,558 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(57589771,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-3-2-actorRefSource#-1030664054]
+2018-11-09 21:21:48,313 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 1769562393
+2018-11-09 21:21:50,537 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - jpro.plainFile - Couldn't get resource for: 'jpro/html/test/index.html'
+2018-11-09 21:21:50,609 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 21:21:50,610 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2018-11-09 21:21:50,612 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Fri Nov 09 21:21:50 CET 2018      
+2018-11-09 21:21:50,614 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.034 
+2018-11-09 21:21:50,617 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.022  
+2018-11-09 21:21:50,619 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2018-11-09 21:21:50,622 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2018-11-09 21:21:50,624 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 139498
+2018-11-09 21:21:50,625 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 30791
+2018-11-09 21:21:50,626 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 21:21:51,001 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - jpro.plainFile - Couldn't get resource for: 'jpro/html/favicon.ico'
+2018-11-09 21:21:52,803 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 21:21:52,804 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 21:21:52,806 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:21:52,806 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:21:52,807 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 21:21:53,077 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-12-2-actorRefSource#-2070980533]
+2018-11-09 21:21:53,419 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 1678658811
+2018-11-09 21:21:54,996 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - jpro.plainFile - Couldn't get resource for: 'jpro/html/test/fullscreen/index.html'
+2018-11-09 21:21:55,039 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 21:21:55,041 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2018-11-09 21:21:55,044 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Fri Nov 09 21:21:55 CET 2018      
+2018-11-09 21:21:55,048 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.013 
+2018-11-09 21:21:55,051 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.025  
+2018-11-09 21:21:55,054 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2018-11-09 21:21:55,057 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2018-11-09 21:21:55,059 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 138986
+2018-11-09 21:21:55,062 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 30535
+2018-11-09 21:21:55,065 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 21:21:56,733 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 21:21:56,734 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 21:21:56,736 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 21:21:56,738 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 21:21:56,739 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 21:21:56,929 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-16-2-actorRefSource#-1658785041]
+2018-11-09 21:21:57,082 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2018-11-09 21:21:57,203 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 1903883948
+2018-11-09 21:22:00,722 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2018-11-09 23:27:23,384 [INFO] in JavaFX Application Thread - Exec: [ecj  -1.8 -d /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/bin -warn:none /Users/ciprian/Playfield/repositories/plugTEAM/plug-editor-fx/exemples/AliceBobMeetPeterson.obp/java]
+2018-11-09 23:27:23,392 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/classes/java/main
+2018-11-09 23:27:23,400 [ERROR] in JavaFX Application Thread - incorrect classpath: /Users/ciprian/Playfield/repositories/plugTEAM/plug-packaging/obp2_jpro/build/resources/main
+2018-11-09 23:27:35,353 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 0!default
+2018-11-09 23:27:35,359 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 0!default
+2018-11-09 23:27:35,364 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:35,369 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 23:27:35,377 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/0!default
+2018-11-09 23:27:35,673 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-23-2-actorRefSource#92558312]
+2018-11-09 23:27:36,007 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 171222072
+2018-11-09 23:27:36,564 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:36,616 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2018-11-09 23:27:36,651 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Fri Nov 09 23:27:36 CET 2018      
+2018-11-09 23:27:36,675 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.021 
+2018-11-09 23:27:36,694 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.039  
+2018-11-09 23:27:36,712 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2018-11-09 23:27:36,766 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2018-11-09 23:27:36,778 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 138144
+2018-11-09 23:27:36,802 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 30515
+2018-11-09 23:27:36,809 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:36,824 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 943333417!default
+2018-11-09 23:27:36,838 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 943333417!default
+2018-11-09 23:27:36,848 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:36,857 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 23:27:36,867 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/943333417!default
+2018-11-09 23:27:36,952 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF7999706092819512526.tmp (No such file or directory)
+2018-11-09 23:27:37,036 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF7999706092819512526.tmp (No such file or directory)
+2018-11-09 23:27:37,100 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF7999706092819512526.tmp (No such file or directory)
+2018-11-09 23:27:37,257 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(943333417,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-26-2-actorRefSource#1488257555]
+2018-11-09 23:27:37,363 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 707919636
+2018-11-09 23:27:37,465 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:37,551 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2018-11-09 23:27:37,592 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Fri Nov 09 23:27:37 CET 2018      
+2018-11-09 23:27:37,628 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.022 
+2018-11-09 23:27:37,655 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.001  
+2018-11-09 23:27:37,670 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2018-11-09 23:27:37,684 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2018-11-09 23:27:37,694 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 138986
+2018-11-09 23:27:37,706 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 30574
+2018-11-09 23:27:37,713 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:37,727 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 709797166!default
+2018-11-09 23:27:37,739 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 709797166!default
+2018-11-09 23:27:37,755 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:37,762 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 23:27:37,783 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/709797166!default
+2018-11-09 23:27:38,077 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(709797166,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-29-2-actorRefSource#333015688]
+2018-11-09 23:27:38,147 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 1309609775
+2018-11-09 23:27:38,587 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:38,602 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2018-11-09 23:27:38,740 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Fri Nov 09 23:27:38 CET 2018      
+2018-11-09 23:27:38,772 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.063 
+2018-11-09 23:27:38,799 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.070  
+2018-11-09 23:27:38,822 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2018-11-09 23:27:38,840 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2018-11-09 23:27:38,854 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 138986
+2018-11-09 23:27:38,864 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 30561
+2018-11-09 23:27:38,872 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:38,887 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - application requested: 86790074!default
+2018-11-09 23:27:38,903 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - Creating Application: 86790074!default
+2018-11-09 23:27:38,923 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - remoteAddress 0:0:0:0:0:0:0:1
+2018-11-09 23:27:38,933 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - host          localhost:8080
+2018-11-09 23:27:38,955 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro - uri           /app/86790074!default
+2018-11-09 23:27:39,075 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF1367020570983322641.tmp (No such file or directory)
+2018-11-09 23:27:39,174 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF1367020570983322641.tmp (No such file or directory)
+2018-11-09 23:27:39,256 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[33mwarn[0m] c.jpro - resource not available: java.io.FileNotFoundException: /var/folders/3z/kzzw_yd91wn6y_t5ytdv8v480000gn/T/+JXF1367020570983322641.tmp (No such file or directory)
+2018-11-09 23:27:39,416 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewSerializerActor - appdef: AppByID(86790074,Some(AppByMain(default,plug.ui2.PlugUI,None,NamedClassLoader(system),false))) clientinfo: ClientInfo(http://localhost:8080/test/fullscreen/default,http://localhost:8080/app/default,1858.0,1014.0,false,en-US,List(en-US, en, de, fr, ro),Map(_ga -> GA1.1.1393938722.1539850882, Webstorm-d96a5bc0 -> fbc64749-dfe4-4f4a-b389-8815185c3caf))out: Actor[akka://application/system/StreamSupervisor-0/flow-32-2-actorRefSource#2047804329]
+2018-11-09 23:27:39,435 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] com.jpro.JS - received msg: new MainID: 3991 userid: 626962986
+2018-11-09 23:27:40,837 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:40,862 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2018-11-09 23:27:40,894 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Fri Nov 09 23:27:40 CET 2018      
+2018-11-09 23:27:40,918 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.033 
+2018-11-09 23:27:40,940 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.021  
+2018-11-09 23:27:40,964 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2018-11-09 23:27:40,983 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2018-11-09 23:27:40,996 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 138986
+2018-11-09 23:27:41,021 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 30571
+2018-11-09 23:27:41,036 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-09 23:27:41,944 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2018-11-09 23:27:42,606 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2018-11-09 23:27:43,832 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2018-11-09 23:27:46,438 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.c.InstanceImpl - closing window!
+2018-11-10 14:08:43,575 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-10 14:08:43,644 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - Application closed:
+2018-11-10 14:08:43,800 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - startTime      : Sat Nov 10 14:08:43 CET 2018      
+2018-11-10 14:08:44,169 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageLatency : 00:00:00.061 
+2018-11-10 14:08:44,420 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - averageJitter  : 00:00:00.071  
+2018-11-10 14:08:44,559 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateServer: 00:00:00.000
+2018-11-10 14:08:44,617 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - framerateClient: 00:00:00.000
+2018-11-10 14:08:44,677 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - raw            : 3977884
+2018-11-10 14:08:44,745 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - zipped         : 1301350
+2018-11-10 14:08:44,778 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.j.i.s.ViewInfo$ - 
+2018-11-10 14:19:11,997 [INFO] in AsyncAppender-Worker-ASYNCSTDOUT - [[37minfo[0m] c.jpro.activity - Closing the server -> used memory: 137 MB  -  free system memory: 22 MB

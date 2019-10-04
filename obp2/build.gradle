@@ -34,7 +34,7 @@ applicationDistribution.into("bin") {
 
 distributions {
     main {
-        baseName = 'plug-' + project.name
+        baseName = project.name
         version = project.computedVersion
         contents {
             from(project.file("dist")) {
@@ -51,7 +51,7 @@ macAppBundle {
     properties.each { key, value ->
         javaProperties.put(key, value)
     }
-    dmgName =  'plug-' + project.name + "-mac-" + project.computedVersion
+    dmgName =  project.name + "-osx-" + project.computedVersion
     bundleJRE = false
     jreHome = ""
 }
@@ -59,6 +59,7 @@ macAppBundle {
 dependencies {
     //UI support
     runtime group: 'fr.ensta-bretagne', name: 'plug-GUI', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-CLI', version: plug.version
     //LTL support
     runtime group: 'fr.ensta-bretagne', name: 'LTL', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
