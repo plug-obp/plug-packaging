@@ -1,6 +1,7 @@
 language: java
 jdk:
   - oraclejdk8
+dist: trusty
 script:
   - ./gradlew distZip createAppZip
   - if [ "$TRAVIS_BRANCH" = "master" ]; then ./gradlew bintrayUpload; fi
