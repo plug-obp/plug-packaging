@@ -17,3 +17,7 @@ obp2/readelf.txt
 hs_err_pid43328.log
 obp2_jpro/logs
 aefd/.runtime-data
+logs
+obp2/.runtime-data
+obp2-jpro/logs
+RUNNING_PID
