@@ -54,4 +54,5 @@ dependencies {
     
 }
 
-bintrayUpload.dependsOn{[build, createAppZip]}
+build.dependsOn{[createAppZip]}
+bintrayUpload.dependsOn{[build]}

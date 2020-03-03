@@ -54,4 +54,5 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'emi-analysis', version: '0.9.6'
 }
 
-bintrayUpload.dependsOn{[build, createAppZip]}
+build.dependsOn{[createAppZip]}
+bintrayUpload.dependsOn{[build]}

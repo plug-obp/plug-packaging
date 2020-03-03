@@ -14,4 +14,3 @@ include 'obp2-remote' //supports only remote languages
 
 include 'obp2-remote-headless' //supports only remote languages
 
-include 'obp2-remote-verimob' //supports only remote languages

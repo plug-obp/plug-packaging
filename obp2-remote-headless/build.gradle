@@ -1,7 +1,7 @@
 apply plugin: 'application'
 
 
-def mainClass = "plug.cli.PlugCLI"
+def mainClass = "plug.cli.PlugRemoteCLI"
 def properties = new HashMap()
 
 mainClassName = mainClass
@@ -26,7 +26,7 @@ distributions {
 
 dependencies {
     //UI support
-    runtime group: 'fr.ensta-bretagne', name: 'plug-CLI', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'plug-remote-CLI', version: plug.version
     //LTL support
     runtime group: 'fr.ensta-bretagne', name: 'LTL', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version

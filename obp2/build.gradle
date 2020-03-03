@@ -75,4 +75,5 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
 }
 
-bintrayUpload.dependsOn{[build, createAppZip]}
+build.dependsOn{[createAppZip]}
+bintrayUpload.dependsOn{[build]}
