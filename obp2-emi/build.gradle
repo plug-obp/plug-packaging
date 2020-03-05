@@ -41,6 +41,12 @@ macAppBundle {
     jreHome = ""
 }
 
+repositories {
+    mavenCentral()
+    maven { url "https://repo.eclipse.org/content/groups/releases/" }
+    maven { url "https://dl.bintray.com/plug-obp/maven" }
+}
+
 dependencies {
     //UI support
     runtime group: 'fr.ensta-bretagne', name: 'plug-GUI', version: plug.version
@@ -50,8 +56,8 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
     //runtimes
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-via-tcp', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'emi-serializer-c', version: '0.9.6'
-    runtime group: 'fr.ensta-bretagne', name: 'emi-analysis', version: '0.9.6'
+    runtime group: 'fr.ensta-bretagne', name: 'emi-serializer-c', version: '0.9.7'
+    runtime group: 'fr.ensta-bretagne', name: 'emi-analysis', version: '0.9.7'
 }
 
 build.dependsOn{[createAppZip]}
