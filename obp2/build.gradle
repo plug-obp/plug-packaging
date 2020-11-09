@@ -14,6 +14,7 @@ mainClassName = mainClass
 
 
 //applicationDefaultJvmArgs = ["-Xms16384m", "-Xmx16384m"]
+applicationDefaultJvmArgs = ["-XX:+ExitOnOutOfMemoryError"]
 properties.each { key, value ->
     applicationDefaultJvmArgs.add("-D${key}=${value}")
 }
