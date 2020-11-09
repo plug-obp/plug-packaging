@@ -1,60 +1,12 @@
 plugins {
-    id "edu.sc.seis.macAppBundle" version "2.2.2"
+    id 'application'
+    id 'edu.sc.seis.macAppBundle' version '2.3.0'
 }
 
-apply plugin: 'application'
-apply plugin: "edu.sc.seis.macAppBundle"
-
-def mainClass = "plug.ui2.PlugUI"
-def properties = new HashMap()
-//properties.put("java.library.path", "/Users/ciprian/Downloads/OBP-1.5.1_osx64 3/OUTPUT/system.obp/bin")
-properties.put("apple.laf.useScreenMenuBar", "true")
-
-mainClassName = mainClass
-
-
-//applicationDefaultJvmArgs = ["-Xms16384m", "-Xmx16384m"]
-applicationDefaultJvmArgs = ["-XX:+ExitOnOutOfMemoryError"]
-properties.each { key, value ->
-    applicationDefaultJvmArgs.add("-D${key}=${value}")
-}
-
-
-task createExtraRunApp(type: CreateStartScripts) {
-    mainClassName = "plug.cli.PlugCLI"
-    classpath = startScripts.classpath
-    outputDir = startScripts.outputDir
-    applicationName = 'obp2-headless'
-}
-
-applicationDistribution.into("bin") {
-    duplicatesStrategy= DuplicatesStrategy.EXCLUDE
-    from(createExtraRunApp)
-    fileMode = 0755
-}
-
-distributions {
-    main {
-        baseName = project.name
-        version = project.computedVersion
-        contents {
-            from(project.file("dist")) {
-                excludes ["*.pyc"]
-                into "."
-            }
-        }
-    }
-}
-
-macAppBundle {
-    mainClassName = mainClass
-    icon = "icon/OBP2.icns"
-    properties.each { key, value ->
-        javaProperties.put(key, value)
-    }
-    dmgName =  project.name + "-osx-" + project.computedVersion
-    bundleJRE = false
-    jreHome = ""
+configurations {
+    mac.extendsFrom runtime
+    linux.extendsFrom runtime
+    win.extendsFrom runtime
 }
 
 dependencies {
@@ -74,7 +26,152 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: plug.version
     runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
+
+    mac group: 'org.openjfx', name: 'javafx-base', version: '11.0.2', classifier: 'mac'
+    mac group: 'org.openjfx', name: 'javafx-graphics', version: '11.0.2', classifier: 'mac'
+    mac group: 'org.openjfx', name: 'javafx-controls', version: '11.0.2', classifier: 'mac'
+    mac group: 'org.openjfx', name: 'javafx-swing', version: '11.0.2', classifier: 'mac'
+
+    linux group: 'org.openjfx', name: 'javafx-base', version: '11.0.2', classifier: 'linux'
+    linux group: 'org.openjfx', name: 'javafx-graphics', version: '11.0.2', classifier: 'linux'
+    linux group: 'org.openjfx', name: 'javafx-controls', version: '11.0.2', classifier: 'linux'
+    linux group: 'org.openjfx', name: 'javafx-swing', version: '11.0.2', classifier: 'linux'
+
+    win group: 'org.openjfx', name: 'javafx-base', version: '11.0.2', classifier: 'win'
+    win group: 'org.openjfx', name: 'javafx-graphics', version: '11.0.2', classifier: 'win'
+    win group: 'org.openjfx', name: 'javafx-controls', version: '11.0.2', classifier: 'win'
+    win group: 'org.openjfx', name: 'javafx-swing', version: '11.0.2', classifier: 'win'
 }
 
 build.dependsOn{[createAppZip]}
 bintrayUpload.dependsOn{[build]}
+
+def fxModulePath = ['--module-path=@APP_HOME@/lib/javafx-base-11.0.2-mac.jar:@APP_HOME@/lib/javafx-controls-11.0.2-mac.jar:@APP_HOME@/lib/javafx-graphics-11.0.2-mac.jar:@APP_HOME@/lib/javafx-swing-11.0.2-mac.jar']
+def fxAddModules = ['--add-modules=javafx.base,javafx.swing,javafx.controls']
+def fxAddExports = [  '--add-exports', 'javafx.graphics/com.sun.javafx.scene.layout=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.util=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.application=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.tk=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.scene.text=ALL-UNNAMED'
+                      ,'--add-opens'  , 'javafx.graphics/javafx.scene.text=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.text=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.base/com.sun.javafx.collections=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.base/com.sun.javafx.binding=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.scene=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.base/com.sun.javafx.event=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.base/com.sun.javafx.runtime=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.base/com.sun.javafx.logging=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.stage=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.scene.traversal=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.scene.input=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.base/com.sun.javafx=ALL-UNNAMED'
+                      ,'--add-exports', 'javafx.graphics/com.sun.javafx.geom=ALL-UNNAMED']
+
+
+application {
+    mainClassName = 'plug.ui2.PlugUI'
+    applicationDefaultJvmArgs = [
+            '-XX:+ExitOnOutOfMemoryError'
+            ,'-Dapple.laf.useScreenMenuBar=true'
+            //,'-Djava.library.path=/Users/ciprian/Downloads/OBP-1.5.1_osx64 3/OUTPUT/system.obp/bin'
+    ] + fxModulePath + fxAddModules + fxAddExports
+}
+
+run {
+    doFirst {
+        jvmArgs = ['--module-path=' +
+                           (project.configurations['mac'].findAll { it.name.startsWith("javafx") }).join(':')
+        ] + fxAddModules + fxAddExports
+    }
+}
+
+startScripts {
+    //defaultJvmOpts=
+    classpath = files('*')
+    doLast {
+        unixScript.text = unixScript.text.replace('@APP_HOME@', '$APP_HOME')
+        windowsScript.text = windowsScript.text.replace('@APP_HOME@', '%APP_HOME%')
+    }
+}
+
+distributions {
+    main {//default OSX
+        baseName = project.name + '-osx'
+        version = project.computedVersion
+        contents {
+            into('.') {
+                from(project.file("dist"))
+            }
+            into('lib') {
+                from(project.getConfigurations().named('mac'))
+            }
+            exclude('**/*.bat')
+            exclude("**/${project.name}-${project.computedVersion}.jar")
+        }
+    }
+
+    mac {
+        baseName = project.name + '-osx'
+        version = project.computedVersion
+        contents {
+            into('.') {
+                from(project.file("dist"))
+            }
+            into('bin') {
+                from(startScripts).exclude('**/*.bat')
+                fileMode = 0755
+            }
+            into('lib') {
+                from(project.getConfigurations().named('mac'))
+            }
+        }
+    }
+
+    linux {
+        baseName = project.name + '-linux'
+        version = project.computedVersion
+        contents {
+            into('.') {
+                from(project.file("dist"))
+            }
+            into('bin') {
+                from(startScripts).exclude('**/*.bat')
+                fileMode = 0755
+                //replace the occurrences of mac with linux from the $fxModulePath variable that gets into the run script
+                filter { line -> line.replaceAll('mac', 'linux') }
+            }
+            into('lib') {
+                from(project.getConfigurations().named('linux'))
+            }
+        }
+    }
+
+    win {
+        baseName = project.name + '-win'
+        version = project.computedVersion
+        contents {
+            into('.') {
+                from(project.file("dist"))
+            }
+            into('bin') {
+                from(startScripts).include('*.bat')
+                fileMode = 0755
+                //replace the occurrences of mac with win from the $fxModulePath variable that gets into the run script
+                filter { line -> line.replaceAll('mac', 'win') }
+            }
+            into('lib') {
+                from(project.getConfigurations().named('win'))
+            }
+        }
+    }
+}
+
+macAppBundle {
+    mainClassName = application.mainClassName
+    icon = "icon/OBP2.icns"
+    javaProperties.put('apple.laf.useScreenMenuBar', 'true')
+    dmgName =  project.name + "-osx-" + project.computedVersion
+    bundleJRE = false
+    jreHome = ""
+    runtimeConfigurationName = 'mac'
+}
