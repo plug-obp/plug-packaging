@@ -22,4 +22,4 @@ obp2/.runtime-data
 obp2-jpro/logs
 RUNNING_PID
 .idea
-.runtime-data
+**/.runtime-data
