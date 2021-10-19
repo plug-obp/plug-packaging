@@ -1,7 +1,7 @@
 apply plugin: 'application'
 
 
-def mainClass = "plug.cli.PlugRemoteCLI"
+def mainClass = "obp2.cli.PlugRemoteCLI"
 def properties = new HashMap()
 
 mainClassName = mainClass
@@ -26,14 +26,14 @@ distributions {
 
 dependencies {
     //UI support
-    runtime group: 'fr.ensta-bretagne', name: 'plug-remote-CLI', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-remote-CLI', version: '1.0.0'
     //LTL support
-    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
     //runtimes
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
     
 }
 
-bintrayUpload.dependsOn{[build]}
+

@@ -4,9 +4,9 @@ include 'obp2-headless' //headless version
 
 include 'obp2-simulator'
 
-include 'obp2-emi' //supports only emi - uml
+//include 'obp2-emi' //supports only emi - uml
 
-include 'obp2-aefd' //supports only the AEFD language
+//include 'obp2-aefd' //supports only the AEFD language
 
 include 'obp2-jpro' //experimental web interface
 

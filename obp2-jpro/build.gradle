@@ -1,22 +1,25 @@
 buildscript {
     repositories {
-        jcenter()
-        maven {       url "http://sandec.bintray.com/repo"     }
+        mavenCentral()
+        maven { url "https://sandec.jfrog.io/artifactory/repo" }
     }
     dependencies {
         classpath 'com.sandec.jpro:jpro-plugin-gradle:2019.1.3'
     }
 }
+
 repositories {
-    jcenter()
+    mavenCentral()
+    maven { url "https://sandec.jfrog.io/artifactory/repo" }
 }
+
 apply plugin: 'com.sandec.jpro'
 jpro {
     port = 8080
 }
 
 
-def mainClass = "plug.wui.PlugWUI"
+def mainClass = "obp2.wui.PlugWUI"
 def properties = new HashMap()
 //properties.put("java.library.path", "/Users/ciprian/Downloads/OBP-1.5.1_osx64 3/OUTPUT/system.obp/bin")
 properties.put("apple.laf.useScreenMenuBar", "true")
@@ -44,19 +47,17 @@ distributions {
 
 dependencies {
     //UI support
-    runtime group: 'fr.ensta-bretagne', name: 'plug-WUI', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-WUI', version: '1.0.0'
     //LTL support
-    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchi', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-buchikripke', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
     //runtimes
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lexplicit', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'runtime-fiacre', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'runtime-postmortem-obp', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lspinja', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-composite', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltuml', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-remote', version: plug.version
-    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-ltla', version: plug.version
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-tlaplus', version: '1.0.0'
+
+//    runtime group: 'fr.ensta-bretagne', name: 'runtime-fiacre', version: '1.0.0'
+//    runtime group: 'fr.ensta-bretagne', name: 'runtime-postmortem-obp', version: '1.0.0'
+//    runtime group: 'fr.ensta-bretagne', name: 'plug-runtime-lexplicit', version: '1.0.0'
 }
 
