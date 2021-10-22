@@ -8,9 +8,22 @@ println "--- Building version:${computedVersion} ---"
 
 subprojects {
     version='1.0.0'
+    apply plugin: 'distribution'
 
     repositories {
         mavenCentral()
         maven { url '/Users/ciprian/Playfield/maven_repository' }
+    }
+
+    apply plugin: 'maven-publish'
+    publishing {
+        repositories {
+            maven { url = '/Users/ciprian/Playfield/maven_repository/distributions' }
+        }
+        publications {
+            myDistribution(MavenPublication) {
+                artifact distZip
+            }
+        }
     }
 }
