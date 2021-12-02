@@ -1,3 +1,10 @@
+# Version 1.0.0
+Large internal refactoring.
+Removed:
+- Fiacre support
+- OBP2 bridge
+- EMI
+
 # Version 0.0.6
 
 Big refactoring of the user interface.
