@@ -1,4 +1,15 @@
-//apply plugin: 'java'
+tasks.register('assemble') {
+    subprojects.each { dependsOn "${it.name}:assemble" }
+}
+tasks.register('build') {
+    subprojects.each { dependsOn "${it.name}:build" }
+}
+tasks.register('clean') {
+    subprojects.each { dependsOn "${it.name}:clean" }
+}
+tasks.register('publish') {
+    subprojects.each { dependsOn "${it.name}:publish" }
+}
 version = '1.0.0'
 def daily = System.getenv("DAILY")
 def computedVersion = daily != null ? "daily-" + new Date().format("yy") : project.version
