@@ -1,12 +1,11 @@
 #!/bin/bash
 
-TARGET=~/Downloads/obp2-distribution
+TARGET=/Volumes/mocs-artefacts/OBP2/v1.0.0-$(date +"%y_%m_%d")
 
 ./gradlew clean build publish --refresh-dependencies
 
-rsync -a obp2/build/distributions/ 			${TARGET}
-rsync -a obp2-headless/build/distributions/ 		${TARGET}
-rsync -a obp2-jpro/build/distributions/ 		${TARGET}
-rsync -a obp2-remote/build/distributions/ 		${TARGET}
-rsync -a obp2-remote-headless/build/distributions/ 	${TARGET}
-rsync -a obp2-simulator/build/distributions/ 		${TARGET} 
+rsync -a obp2/build/distributions/ 			            "${TARGET}"
+rsync -a obp2-headless/build/distributions/ 		    "${TARGET}"
+rsync -a obp2-remote/build/distributions/ 		      "${TARGET}"
+rsync -a obp2-remote-headless/build/distributions/ 	"${TARGET}"
+rsync -a obp2-simulator/build/distributions/ 		    "${TARGET}"
