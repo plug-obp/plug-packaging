@@ -1,9 +1,13 @@
 # Version 1.0.0
 Large internal refactoring.
-Removed:
-- Fiacre support
-- OBP2 bridge
-- EMI
+
+New Features:
+- The CLI version produces string and binary counter-examples
+
+Removed features :
+- The bridge for post-mortem analysis of OBP is no longer supported
+- The EMI support for UML is unavailable in this version
+
 
 # Version 0.0.6
 
