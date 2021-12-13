@@ -69,7 +69,7 @@ dependencies {
     //runtimes
     runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
     runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-tlaplus', version: '1.0.0'
-//    runtime group: 'fr.ensta-bretagne', name: 'runtime-fiacre', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-fiacre', version: '1.0.0'
 //    runtime group: 'fr.ensta-bretagne', name: 'runtime-postmortem-obp', version: '1.0.0'
     runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-lexplicit', version: '1.0.0'
     runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-lstate_event', version: '1.0.0'

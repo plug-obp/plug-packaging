@@ -8,7 +8,7 @@ include 'obp2-simulator'
 
 //include 'obp2-aefd' //supports only the AEFD language
 
-include 'obp2-jpro' //experimental web interface
+//include 'obp2-jpro' //experimental web interface
 
 include 'obp2-remote' //supports only remote languages
 
