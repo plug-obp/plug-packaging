@@ -21,7 +21,7 @@ properties.each { key, value ->
 
 
 task createExtraRunApp(type: CreateStartScripts) {
-    mainClassName = "plug.cli.PlugCLI"
+    mainClassName = "obp2.cli.PlugCLI"
     classpath = startScripts.classpath
     outputDir = startScripts.outputDir
     applicationName = 'obp2-headless'
