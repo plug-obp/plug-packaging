@@ -14,3 +14,5 @@ include 'obp2-remote' //supports only remote languages
 
 include 'obp2-remote-headless' //supports only remote languages
 
+include 'obp2-oneway' //supports only bpmn2 for oneway
+

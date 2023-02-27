@@ -1,0 +1,89 @@
+plugins {
+    id "edu.sc.seis.macAppBundle" version "2.2.2"
+}
+
+apply plugin: 'application'
+apply plugin: "edu.sc.seis.macAppBundle"
+
+def mainClass = "obp2.ui2.PlugUI"
+def properties = new HashMap()
+//properties.put("java.library.path", "/Users/ciprian/Downloads/OBP-1.5.1_osx64 3/OUTPUT/system.obp/bin")
+properties.put("apple.laf.useScreenMenuBar", "true")
+
+mainClassName = mainClass
+
+
+applicationDefaultJvmArgs = ["-XX:+ExitOnOutOfMemoryError"]
+properties.each { key, value ->
+    applicationDefaultJvmArgs.add("-D${key}=${value}")
+}
+
+task createExtraRunApp(type: CreateStartScripts) {
+    mainClassName = "obp2.cli.PlugCLI"
+    classpath = startScripts.classpath
+    outputDir = startScripts.outputDir
+    applicationName = 'obp2-oneway-headless'
+}
+
+applicationDistribution.into("bin") {
+    duplicatesStrategy= DuplicatesStrategy.EXCLUDE
+    from(createExtraRunApp)
+    fileMode = 0755
+}
+
+distributions {
+    main {
+        baseName = project.name
+        version = project.computedVersion
+        contents {
+            from(project.file("dist")) {
+                excludes ["*.pyc"]
+                into "."
+            }
+        }
+    }
+}
+
+macAppBundle {
+    mainClassName = mainClass
+    icon = "icon/OBP2.icns"
+    properties.each { key, value ->
+        javaProperties.put(key, value)
+    }
+    dmgName = project.name + "-osx-" + project.computedVersion
+    bundleJRE = false
+    jreHome = ""
+}
+
+dependencies {
+    //UI support
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-GUI', version: '1.0.0-oneway'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-CLI', version: '1.0.0-oneway'
+    //LTL support
+    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
+    //runtimes
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-bpmn2-semantics', version:'1.0.0'
+
+    //emf packages needed for org.eclipse.bpmn2
+	runtime group: 'org.eclipse.emf', name: 'org.eclipse.emf.common', 				version: '2.24.0'
+	runtime group: 'org.eclipse.emf', name: 'org.eclipse.emf.ecore',				version: '2.26.0'
+	runtime group: 'org.eclipse.emf', name: 'org.eclipse.emf.ecore.xmi', 			version: '2.16.0'
+
+    //bpmn2 packages
+	runtime group: 'org.eclipse.bpmn2', name: 'org.eclipse.bpmn2', version: '1.5.1.Final-v20200903-1545', ext: 'jar'
+}
+
+repositories {
+	ivy {
+		url = 'https://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/modeling/mdt/bpmn2/updates/2020-09/1.5.1/plugins/'
+		layout 'pattern', {
+			artifact '[artifact](_[revision])(.[ext])'
+		}
+	}
+}
+
+build.dependsOn{[createAppZip]}
+
