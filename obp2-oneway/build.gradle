@@ -63,6 +63,11 @@ dependencies {
     runtime group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
     runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
     runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
+
+    //core needs hash
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-algorithms', version: '1.0.0'
+    runtime group: 'fr.ensta-bretagne', name: 'obp2-hash', version: '1.0.0'
+
     //runtimes
     runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
     runtime group: 'fr.ensta-bretagne', name: 'obp2-bpmn2-semantics', version:'1.0.0'
