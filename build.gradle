@@ -10,7 +10,8 @@ tasks.register('clean') {
 tasks.register('publish') {
     subprojects.each { dependsOn "${it.name}:publish" }
 }
-version = '1.1.0_'+new Date().format("yyMMdd")
+
+version = '1.1.0_' + new Date().format("yyMMdd")
 def daily = System.getenv("DAILY")
 def computedVersion = daily != null ? "daily-" + new Date().format("yy") : project.version
 project.ext.computedVersion =  computedVersion
@@ -23,7 +24,13 @@ subprojects {
 
     repositories {
         mavenCentral()
-        maven { url "${OBP2ReadOnlyMavenRepository}" }
+        maven { 
+            url = "${OBP2ReadOnlyMavenRepository}"
+            allowInsecureProtocol = true 
+            metadataSources {
+                artifact()
+            }
+        }
     }
 
     apply plugin: 'maven-publish'

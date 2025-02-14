@@ -1,14 +1,15 @@
-include 'obp2' //GUI version all platforms
 
-include 'obp2-headless' //headless version
 
-include 'obp2-simulator'
+include 'obp2-remote-headless' //supports only remote languages all platforms
+include 'obp2-headless'         //headless version all platforms
 
-include 'obp2-jpro' //experimental web interface
+// include 'obp2' //GUI version all platforms
 
-include 'obp2-remote' //supports only remote languages
+// include 'obp2-simulator'
 
-include 'obp2-remote-headless' //supports only remote languages
+// include 'obp2-jpro' //experimental web interface
 
-include 'obp2-oneway' //supports only bpmn2 for oneway
+// include 'obp2-remote' //supports only remote languages
+
+// include 'obp2-oneway' //supports only bpmn2 for oneway
 

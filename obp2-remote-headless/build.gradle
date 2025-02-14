@@ -1,24 +1,27 @@
+apply plugin: 'java'
 apply plugin: 'application'
 
 
-def mainClass = "obp2.cli.PlugRemoteCLI"
 def properties = new HashMap()
 
-mainClassName = mainClass
+application {
+    mainClass = "obp2.cli.PlugRemoteCLI"
+    applicationDefaultJvmArgs += ["-XX:+ExitOnOutOfMemoryError"]
 
-applicationDefaultJvmArgs = ["-XX:+ExitOnOutOfMemoryError"]
-properties.each { key, value ->
-    applicationDefaultJvmArgs.add("-D${key}=${value}")
+    properties.each { key, value ->
+        applicationDefaultJvmArgs += "-D${key}=${value}"
+    }
 }
 
 distributions {
     main {
-        baseName = project.name
+        distributionBaseName = project.name
         version = project.computedVersion
         contents {
-            from(project.file("dist")) {
-                excludes ["*.pyc"]
-                into "."
+            duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+            into('lib') {
+                from configurations.runtimeClasspath
+                from jar
             }
         }
     }
@@ -26,14 +29,13 @@ distributions {
 
 dependencies {
     //UI support
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-remote-CLI', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-remote-CLI', version: '1.1.0'
     //LTL support
-    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
     //runtimes
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
-    
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
 }
 
 

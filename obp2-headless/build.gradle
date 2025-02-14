@@ -1,19 +1,20 @@
 apply plugin: 'application'
 
 
-def mainClass = "obp2.cli.PlugCLI"
 def properties = new HashMap()
 
-mainClassName = mainClass
+application {
+    mainClass = "obp2.cli.PlugCLI"
+    applicationDefaultJvmArgs += ["-XX:+ExitOnOutOfMemoryError"]
 
-applicationDefaultJvmArgs = ["-XX:+ExitOnOutOfMemoryError"]
-properties.each { key, value ->
-    applicationDefaultJvmArgs.add("-D${key}=${value}")
+    properties.each { key, value ->
+        applicationDefaultJvmArgs += "-D${key}=${value}"
+    }
 }
 
 distributions {
     main {
-        baseName = project.name
+        distributionBaseName = project.name
         version = project.computedVersion
         contents {
             from(project.file("dist")) {
@@ -26,17 +27,17 @@ distributions {
 
 dependencies {
     //UI support
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-CLI', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-CLI', version: '1.0.0'
     //LTL support
-    runtime group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'LTL', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchi', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-buchikripke', version: '1.0.0'
     //runtimes
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-tlaplus', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
 
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-fiacre', version: '1.0.0'
-//    runtime group: 'fr.ensta-bretagne', name: 'runtime-postmortem-obp', version: '1.0.0'
-    runtime group: 'fr.ensta-bretagne', name: 'obp2-runtime-lexplicit', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-tlaplus', version: '1.0.0'
+
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-fiacre', version: '1.0.0'
+    runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-lexplicit', version: '1.0.0'
 }
 
