@@ -83,7 +83,7 @@ dependencies {
 
 repositories {
 	ivy {
-		url = 'https://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/modeling/mdt/bpmn2/updates/2020-09/1.5.1/plugins/'
+		url = 'https://download.eclipse.org/staging/2020-12/plugins/'
 		layout 'pattern', {
 			artifact '[artifact](_[revision])(.[ext])'
 		}
