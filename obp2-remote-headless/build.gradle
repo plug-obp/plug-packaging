@@ -1,6 +1,11 @@
-apply plugin: 'java'
-apply plugin: 'application'
+plugins {
+    id 'java-library'
+    id 'application'
+    id 'maven-publish'
+}
 
+group = "fr.ensta-bretagne"
+version='1.1.0_' + new Date().format("yyMMdd")
 
 def properties = new HashMap()
 
@@ -13,16 +18,35 @@ application {
     }
 }
 
+repositories {
+    mavenCentral()
+    maven { 
+        url = "${OBP2ReadOnlyMavenRepository}"
+        allowInsecureProtocol = true 
+    }
+}
+
 distributions {
     main {
         distributionBaseName = project.name
-        version = project.computedVersion
+        version = project.version
         contents {
             duplicatesStrategy = DuplicatesStrategy.EXCLUDE
             into('lib') {
                 from configurations.runtimeClasspath
                 from jar
             }
+        }
+    }
+}
+
+publishing {
+    repositories {
+        maven { url = "${OBP2LocalMavenRepository}" }
+    }
+    publications {
+        myDistribution(MavenPublication) {
+            artifact distZip
         }
     }
 }
@@ -37,5 +61,4 @@ dependencies {
     //runtimes
     runtimeOnly group: 'fr.ensta-bretagne', name: 'obp2-runtime-remote', version: '1.0.0'
 }
-
 
