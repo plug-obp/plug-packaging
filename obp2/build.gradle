@@ -42,20 +42,24 @@ distributions {
     }
 }
 
-// jpackage task to create native macOS app bundle (requires JDK 14+)
+// jpackage tasks for native platform packaging (requires JDK 14+)
+// NOTE: jpackage can only create packages for the CURRENT OS
+// For multi-platform builds, run on each platform or use CI/CD (GitHub Actions)
+
+def os = org.gradle.internal.os.OperatingSystem.current()
+def appVersion = project.version.toString().replaceAll('[^0-9.]', '') ?: '2.0.0'
+
+// === macOS Tasks ===
 tasks.register('jpackageMac', Exec) {
     dependsOn installDist
+    description = 'Create macOS .app bundle'
+    group = 'jpackage'
     
     def iconFile = file('icon/OBP2.icns')
-    def appVersion = project.version.toString().replaceAll('[^0-9.]', '')
-    if (appVersion.isEmpty()) appVersion = '2.0.0'
-    
     def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
     def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
     
-    doFirst {
-        outputDir.mkdirs()
-    }
+    doFirst { outputDir.mkdirs() }
     
     commandLine 'jpackage',
         '--type', 'app-image',
@@ -70,23 +74,19 @@ tasks.register('jpackageMac', Exec) {
         '--icon', iconFile.absolutePath,
         '--mac-package-name', 'OBP2'
     
-    onlyIf { org.gradle.internal.os.OperatingSystem.current().isMacOsX() }
+    onlyIf { os.isMacOsX() }
 }
 
-// Create DMG for macOS distribution
 tasks.register('jpackageMacDmg', Exec) {
     dependsOn installDist
+    description = 'Create macOS DMG installer'
+    group = 'jpackage'
     
     def iconFile = file('icon/OBP2.icns')
-    def appVersion = project.version.toString().replaceAll('[^0-9.]', '')
-    if (appVersion.isEmpty()) appVersion = '2.0.0'
-    
     def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
     def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
     
-    doFirst {
-        outputDir.mkdirs()
-    }
+    doFirst { outputDir.mkdirs() }
     
     commandLine 'jpackage',
         '--type', 'dmg',
@@ -101,7 +101,153 @@ tasks.register('jpackageMacDmg', Exec) {
         '--icon', iconFile.absolutePath,
         '--mac-package-name', 'OBP2'
     
-    onlyIf { org.gradle.internal.os.OperatingSystem.current().isMacOsX() }
+    onlyIf { os.isMacOsX() }
+}
+
+// === Windows Tasks ===
+tasks.register('jpackageWin', Exec) {
+    dependsOn installDist
+    description = 'Create Windows app image'
+    group = 'jpackage'
+    
+    def iconFile = file('icon/OBP2.ico')
+    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
+    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+    
+    doFirst { outputDir.mkdirs() }
+    
+    commandLine 'jpackage',
+        '--type', 'app-image',
+        '--name', 'OBP2',
+        '--app-version', appVersion,
+        '--input', inputDir.absolutePath,
+        '--dest', outputDir.absolutePath,
+        '--main-jar', "${project.name}-${project.version}.jar",
+        '--main-class', 'obp2.ui2.PlugUI',
+        '--java-options', '-XX:+ExitOnOutOfMemoryError',
+        '--icon', iconFile.absolutePath,
+        '--win-console'
+    
+    onlyIf { os.isWindows() }
+}
+
+tasks.register('jpackageWinMsi', Exec) {
+    dependsOn installDist
+    description = 'Create Windows MSI installer (requires WiX toolset)'
+    group = 'jpackage'
+    
+    def iconFile = file('icon/OBP2.ico')
+    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
+    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+    
+    doFirst { outputDir.mkdirs() }
+    
+    commandLine 'jpackage',
+        '--type', 'msi',
+        '--name', 'OBP2',
+        '--app-version', appVersion,
+        '--input', inputDir.absolutePath,
+        '--dest', outputDir.absolutePath,
+        '--main-jar', "${project.name}-${project.version}.jar",
+        '--main-class', 'obp2.ui2.PlugUI',
+        '--java-options', '-XX:+ExitOnOutOfMemoryError',
+        '--icon', iconFile.absolutePath,
+        '--win-menu',
+        '--win-shortcut'
+    
+    onlyIf { os.isWindows() }
+}
+
+// === Linux Tasks ===
+tasks.register('jpackageLinux', Exec) {
+    dependsOn installDist
+    description = 'Create Linux app image'
+    group = 'jpackage'
+    
+    def iconFile = file('icon/OBP2.png')
+    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
+    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+    
+    doFirst { outputDir.mkdirs() }
+    
+    commandLine 'jpackage',
+        '--type', 'app-image',
+        '--name', 'OBP2',
+        '--app-version', appVersion,
+        '--input', inputDir.absolutePath,
+        '--dest', outputDir.absolutePath,
+        '--main-jar', "${project.name}-${project.version}.jar",
+        '--main-class', 'obp2.ui2.PlugUI',
+        '--java-options', '-XX:+ExitOnOutOfMemoryError',
+        '--icon', iconFile.absolutePath
+    
+    onlyIf { os.isLinux() }
+}
+
+tasks.register('jpackageLinuxDeb', Exec) {
+    dependsOn installDist
+    description = 'Create Linux .deb package (Debian/Ubuntu)'
+    group = 'jpackage'
+    
+    def iconFile = file('icon/OBP2.png')
+    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
+    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+    
+    doFirst { outputDir.mkdirs() }
+    
+    commandLine 'jpackage',
+        '--type', 'deb',
+        '--name', 'obp2',
+        '--app-version', appVersion,
+        '--input', inputDir.absolutePath,
+        '--dest', outputDir.absolutePath,
+        '--main-jar', "${project.name}-${project.version}.jar",
+        '--main-class', 'obp2.ui2.PlugUI',
+        '--java-options', '-XX:+ExitOnOutOfMemoryError',
+        '--icon', iconFile.absolutePath,
+        '--linux-shortcut'
+    
+    onlyIf { os.isLinux() }
+}
+
+tasks.register('jpackageLinuxRpm', Exec) {
+    dependsOn installDist
+    description = 'Create Linux .rpm package (Fedora/RHEL)'
+    group = 'jpackage'
+    
+    def iconFile = file('icon/OBP2.png')
+    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
+    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+    
+    doFirst { outputDir.mkdirs() }
+    
+    commandLine 'jpackage',
+        '--type', 'rpm',
+        '--name', 'obp2',
+        '--app-version', appVersion,
+        '--input', inputDir.absolutePath,
+        '--dest', outputDir.absolutePath,
+        '--main-jar', "${project.name}-${project.version}.jar",
+        '--main-class', 'obp2.ui2.PlugUI',
+        '--java-options', '-XX:+ExitOnOutOfMemoryError',
+        '--icon', iconFile.absolutePath,
+        '--linux-shortcut'
+    
+    onlyIf { os.isLinux() }
+}
+
+// === Convenience task: creates native package for current OS ===
+tasks.register('jpackageNative') {
+    description = 'Create native package for current OS'
+    group = 'jpackage'
+    
+    if (os.isMacOsX()) {
+        dependsOn 'jpackageMac'
+    } else if (os.isWindows()) {
+        dependsOn 'jpackageWin'
+    } else if (os.isLinux()) {
+        dependsOn 'jpackageLinux'
+    }
 }
 
 dependencies {
