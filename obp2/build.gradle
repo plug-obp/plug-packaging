@@ -6,7 +6,8 @@ plugins {
 
 application {
     mainClass = 'obp2.ui2.PlugUI'
-    mainModule = 'obp2.merged'
+    // Note: mainModule is NOT set to allow run task to work with classpath
+    // jlink overrides this with mergedModuleName = 'obp2.merged'
     applicationDefaultJvmArgs = [
         '-XX:+ExitOnOutOfMemoryError',
         '-Dapple.laf.useScreenMenuBar=true'
