@@ -91,7 +91,7 @@ dependencies {
 
 // jlink configuration for creating self-contained runtime images
 jlink {
-    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages', '--add-modules', 'jdk.unsupported']
     
     mergedModuleName = 'obp2.merged'
     
@@ -103,13 +103,16 @@ jlink {
             '--add-opens', 'java.base/java.lang=obp2.merged',
             '--add-opens', 'java.base/java.lang.reflect=obp2.merged',
             '--add-opens', 'java.base/java.util=obp2.merged',
-            '--add-opens', 'java.base/java.io=obp2.merged'
+            '--add-opens', 'java.base/java.io=obp2.merged',
+            '--add-modules', 'jdk.unsupported'
         ]
         moduleName = 'obp2.merged'
     }
     
     mergedModule {
         additive = true
+        // Add jdk.unsupported module for FileWatcher SensitivityWatchEventModifier access
+        requires 'jdk.unsupported'
         // KNOWN ISSUE: BPMN2 EMF models may have resource loading issues when merged
         forceMerge 'obp2', 'jicpl', 'announce4j', 'ecore2java'
         forceMerge 'antlr', 'json', 'kotlin', 'commons', 'jgrapht', 'cache2k'
