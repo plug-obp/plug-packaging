@@ -1,4 +1,9 @@
-
+pluginManagement {
+    plugins {
+        id 'org.beryx.jlink' version '3.2.0'
+        id 'org.openjfx.javafxplugin' version '0.1.0'
+    }
+}
 
 include 'obp2-remote-headless' //supports only remote languages all platforms
 include 'obp2-headless'         //headless version all platforms

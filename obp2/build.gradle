@@ -1,10 +1,12 @@
 plugins {
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'org.beryx.jlink' version '3.2.0'
 }
 
 application {
     mainClass = 'obp2.ui2.PlugUI'
+    mainModule = 'obp2.merged'
     applicationDefaultJvmArgs = [
         '-XX:+ExitOnOutOfMemoryError',
         '-Dapple.laf.useScreenMenuBar=true'
@@ -48,214 +50,6 @@ distributions {
     }
 }
 
-// jpackage tasks for native platform packaging (requires JDK 14+)
-// NOTE: jpackage can only create packages for the CURRENT OS
-// For multi-platform builds, run on each platform or use CI/CD (GitHub Actions)
-
-def os = org.gradle.internal.os.OperatingSystem.current()
-def appVersion = project.version.toString().replaceAll('[^0-9.]', '') ?: '2.0.0'
-
-// === macOS Tasks ===
-tasks.register('jpackageMac', Exec) {
-    dependsOn installDist
-    description = 'Create macOS .app bundle'
-    group = 'jpackage'
-    
-    def iconFile = file('icon/OBP2.icns')
-    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
-    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
-    
-    doFirst { outputDir.mkdirs() }
-    
-    commandLine 'jpackage',
-        '--type', 'app-image',
-        '--name', 'OBP2',
-        '--app-version', appVersion,
-        '--input', inputDir.absolutePath,
-        '--dest', outputDir.absolutePath,
-        '--main-jar', "${project.name}-${project.version}.jar",
-        '--main-class', 'obp2.ui2.PlugUI',
-        '--java-options', '-XX:+ExitOnOutOfMemoryError',
-        '--java-options', '-Dapple.laf.useScreenMenuBar=true',
-        '--icon', iconFile.absolutePath,
-        '--mac-package-name', 'OBP2'
-    
-    onlyIf { os.isMacOsX() }
-}
-
-tasks.register('jpackageMacDmg', Exec) {
-    dependsOn installDist
-    description = 'Create macOS DMG installer'
-    group = 'jpackage'
-    
-    def iconFile = file('icon/OBP2.icns')
-    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
-    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
-    
-    doFirst { outputDir.mkdirs() }
-    
-    commandLine 'jpackage',
-        '--type', 'dmg',
-        '--name', 'OBP2',
-        '--app-version', appVersion,
-        '--input', inputDir.absolutePath,
-        '--dest', outputDir.absolutePath,
-        '--main-jar', "${project.name}-${project.version}.jar",
-        '--main-class', 'obp2.ui2.PlugUI',
-        '--java-options', '-XX:+ExitOnOutOfMemoryError',
-        '--java-options', '-Dapple.laf.useScreenMenuBar=true',
-        '--icon', iconFile.absolutePath,
-        '--mac-package-name', 'OBP2'
-    
-    onlyIf { os.isMacOsX() }
-}
-
-// === Windows Tasks ===
-tasks.register('jpackageWin', Exec) {
-    dependsOn installDist
-    description = 'Create Windows app image'
-    group = 'jpackage'
-    
-    def iconFile = file('icon/OBP2.ico')
-    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
-    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
-    
-    doFirst { outputDir.mkdirs() }
-    
-    commandLine 'jpackage',
-        '--type', 'app-image',
-        '--name', 'OBP2',
-        '--app-version', appVersion,
-        '--input', inputDir.absolutePath,
-        '--dest', outputDir.absolutePath,
-        '--main-jar', "${project.name}-${project.version}.jar",
-        '--main-class', 'obp2.ui2.PlugUI',
-        '--java-options', '-XX:+ExitOnOutOfMemoryError',
-        '--icon', iconFile.absolutePath,
-        '--win-console'
-    
-    onlyIf { os.isWindows() }
-}
-
-tasks.register('jpackageWinMsi', Exec) {
-    dependsOn installDist
-    description = 'Create Windows MSI installer (requires WiX toolset)'
-    group = 'jpackage'
-    
-    def iconFile = file('icon/OBP2.ico')
-    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
-    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
-    
-    doFirst { outputDir.mkdirs() }
-    
-    commandLine 'jpackage',
-        '--type', 'msi',
-        '--name', 'OBP2',
-        '--app-version', appVersion,
-        '--input', inputDir.absolutePath,
-        '--dest', outputDir.absolutePath,
-        '--main-jar', "${project.name}-${project.version}.jar",
-        '--main-class', 'obp2.ui2.PlugUI',
-        '--java-options', '-XX:+ExitOnOutOfMemoryError',
-        '--icon', iconFile.absolutePath,
-        '--win-menu',
-        '--win-shortcut'
-    
-    onlyIf { os.isWindows() }
-}
-
-// === Linux Tasks ===
-tasks.register('jpackageLinux', Exec) {
-    dependsOn installDist
-    description = 'Create Linux app image'
-    group = 'jpackage'
-    
-    def iconFile = file('icon/OBP2.png')
-    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
-    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
-    
-    doFirst { outputDir.mkdirs() }
-    
-    commandLine 'jpackage',
-        '--type', 'app-image',
-        '--name', 'OBP2',
-        '--app-version', appVersion,
-        '--input', inputDir.absolutePath,
-        '--dest', outputDir.absolutePath,
-        '--main-jar', "${project.name}-${project.version}.jar",
-        '--main-class', 'obp2.ui2.PlugUI',
-        '--java-options', '-XX:+ExitOnOutOfMemoryError',
-        '--icon', iconFile.absolutePath
-    
-    onlyIf { os.isLinux() }
-}
-
-tasks.register('jpackageLinuxDeb', Exec) {
-    dependsOn installDist
-    description = 'Create Linux .deb package (Debian/Ubuntu)'
-    group = 'jpackage'
-    
-    def iconFile = file('icon/OBP2.png')
-    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
-    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
-    
-    doFirst { outputDir.mkdirs() }
-    
-    commandLine 'jpackage',
-        '--type', 'deb',
-        '--name', 'obp2',
-        '--app-version', appVersion,
-        '--input', inputDir.absolutePath,
-        '--dest', outputDir.absolutePath,
-        '--main-jar', "${project.name}-${project.version}.jar",
-        '--main-class', 'obp2.ui2.PlugUI',
-        '--java-options', '-XX:+ExitOnOutOfMemoryError',
-        '--icon', iconFile.absolutePath,
-        '--linux-shortcut'
-    
-    onlyIf { os.isLinux() }
-}
-
-tasks.register('jpackageLinuxRpm', Exec) {
-    dependsOn installDist
-    description = 'Create Linux .rpm package (Fedora/RHEL)'
-    group = 'jpackage'
-    
-    def iconFile = file('icon/OBP2.png')
-    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
-    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
-    
-    doFirst { outputDir.mkdirs() }
-    
-    commandLine 'jpackage',
-        '--type', 'rpm',
-        '--name', 'obp2',
-        '--app-version', appVersion,
-        '--input', inputDir.absolutePath,
-        '--dest', outputDir.absolutePath,
-        '--main-jar', "${project.name}-${project.version}.jar",
-        '--main-class', 'obp2.ui2.PlugUI',
-        '--java-options', '-XX:+ExitOnOutOfMemoryError',
-        '--icon', iconFile.absolutePath,
-        '--linux-shortcut'
-    
-    onlyIf { os.isLinux() }
-}
-
-// === Convenience task: creates native package for current OS ===
-tasks.register('jpackageNative') {
-    description = 'Create native package for current OS'
-    group = 'jpackage'
-    
-    if (os.isMacOsX()) {
-        dependsOn 'jpackageMac'
-    } else if (os.isWindows()) {
-        dependsOn 'jpackageWin'
-    } else if (os.isLinux()) {
-        dependsOn 'jpackageLinux'
-    }
-}
-
 dependencies {
     //UI support
     runtimeOnly 'org.obpcdl:obp2-GUI:2.0.0'
@@ -267,7 +61,66 @@ dependencies {
     //runtimes
     runtimeOnly 'org.obpcdl:obp2-runtime-remote:2.0.0'
     runtimeOnly 'org.obpcdl:obp2-runtime-tlaplus:2.0.0'
-    runtimeOnly 'org.obpcdl:obp2-runtime-fiacre:2.0.0'
+    //removed because it requires ECJ, and OBP1 which are not compatible with java 23
+    // runtimeOnly 'org.obpcdl:obp2-runtime-fiacre:2.0.0'
     runtimeOnly 'org.obpcdl:obp2-runtime-lexplicit:2.0.0'
     runtimeOnly 'org.obpcdl:obp2-runtime-lstate_event:2.0.0'
+}
+
+// jlink configuration for creating self-contained runtime images
+jlink {
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    
+    // Since this is a packaging-only project, use the merged module as the main module
+    mergedModuleName = 'obp2.merged'
+    
+    launcher {
+        name = 'obp2'
+        jvmArgs = ['-XX:+ExitOnOutOfMemoryError', '-Dapple.laf.useScreenMenuBar=true']
+        // Module is in merged module
+        moduleName = 'obp2.merged'
+    }
+    
+    mergedModule {
+        additive = true
+        forceMerge 'obp2', 'jicpl', 'tla2tools', 'announce4j', 'ecore2java'
+        forceMerge 'antlr', 'json', 'kotlin', 'commons', 'jgrapht', 'cache2k'
+        forceMerge 'jna', 'jnr', 'asm', 'slf4j', 'logback', 'saxon'
+        forceMerge 'ikonli', 'materialdesign', 'controlsfx', 'jackson'
+    }
+    
+    jpackage {
+        imageName = 'OBP2'
+        installerName = 'OBP2'
+        appVersion = project.version.toString().replaceAll('[^0-9.]', '') ?: '2.0.0'
+        
+        // Use the same JDK that Gradle is using
+        javaHome = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(23)
+        }.get().metadata.installationPath.asFile.absolutePath
+        
+        def currentOs = org.gradle.internal.os.OperatingSystem.current()
+        if (currentOs.isMacOsX()) {
+            def iconFile = file('icon/OBP2.icns')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'dmg'
+            imageOptions = ['--mac-package-name', 'OBP2']
+        } else if (currentOs.isWindows()) {
+            def iconFile = file('icon/OBP2.ico')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'msi'
+            installerOptions = ['--win-menu', '--win-shortcut']
+        } else if (currentOs.isLinux()) {
+            def iconFile = file('icon/OBP2.png')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'deb'
+            installerOptions = ['--linux-shortcut']
+        }
+    }
 }
