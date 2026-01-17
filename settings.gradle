@@ -3,7 +3,7 @@
 include 'obp2-remote-headless' //supports only remote languages all platforms
 include 'obp2-headless'         //headless version all platforms
 
-//include 'obp2' //GUI version all platforms - macAppBundle plugin incompatible with Gradle 9.2.1
+include 'obp2' //GUI version all platforms - uses jpackage for macOS bundle
 
 //include 'obp2-simulator'  - macAppBundle plugin incompatible with Gradle 9.2.1
 

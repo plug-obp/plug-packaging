@@ -1,6 +1,5 @@
 plugins {
     id 'application'
-    id 'edu.sc.seis.macAppBundle' version '2.3.0'
 }
 
 application {
@@ -43,15 +42,66 @@ distributions {
     }
 }
 
-macAppBundle {
-    mainClassName = 'obp2.ui2.PlugUI'
-    icon = 'icon/OBP2.icns'
-    javaProperties = [
-        'apple.laf.useScreenMenuBar': 'true'
-    ]
-    dmgName = "${project.name}-osx-${project.version}"
-    bundleJRE = false
-    jreHome = ''
+// jpackage task to create native macOS app bundle (requires JDK 14+)
+tasks.register('jpackageMac', Exec) {
+    dependsOn installDist
+    
+    def iconFile = file('icon/OBP2.icns')
+    def appVersion = project.version.toString().replaceAll('[^0-9.]', '')
+    if (appVersion.isEmpty()) appVersion = '2.0.0'
+    
+    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
+    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+    
+    doFirst {
+        outputDir.mkdirs()
+    }
+    
+    commandLine 'jpackage',
+        '--type', 'app-image',
+        '--name', 'OBP2',
+        '--app-version', appVersion,
+        '--input', inputDir.absolutePath,
+        '--dest', outputDir.absolutePath,
+        '--main-jar', "${project.name}-${project.version}.jar",
+        '--main-class', 'obp2.ui2.PlugUI',
+        '--java-options', '-XX:+ExitOnOutOfMemoryError',
+        '--java-options', '-Dapple.laf.useScreenMenuBar=true',
+        '--icon', iconFile.absolutePath,
+        '--mac-package-name', 'OBP2'
+    
+    onlyIf { org.gradle.internal.os.OperatingSystem.current().isMacOsX() }
+}
+
+// Create DMG for macOS distribution
+tasks.register('jpackageMacDmg', Exec) {
+    dependsOn installDist
+    
+    def iconFile = file('icon/OBP2.icns')
+    def appVersion = project.version.toString().replaceAll('[^0-9.]', '')
+    if (appVersion.isEmpty()) appVersion = '2.0.0'
+    
+    def inputDir = layout.buildDirectory.dir('install/obp2/lib').get().asFile
+    def outputDir = layout.buildDirectory.dir('jpackage').get().asFile
+    
+    doFirst {
+        outputDir.mkdirs()
+    }
+    
+    commandLine 'jpackage',
+        '--type', 'dmg',
+        '--name', 'OBP2',
+        '--app-version', appVersion,
+        '--input', inputDir.absolutePath,
+        '--dest', outputDir.absolutePath,
+        '--main-jar', "${project.name}-${project.version}.jar",
+        '--main-class', 'obp2.ui2.PlugUI',
+        '--java-options', '-XX:+ExitOnOutOfMemoryError',
+        '--java-options', '-Dapple.laf.useScreenMenuBar=true',
+        '--icon', iconFile.absolutePath,
+        '--mac-package-name', 'OBP2'
+    
+    onlyIf { org.gradle.internal.os.OperatingSystem.current().isMacOsX() }
 }
 
 dependencies {
@@ -69,5 +119,3 @@ dependencies {
     runtimeOnly 'org.obpcdl:obp2-runtime-lexplicit:2.0.0'
     runtimeOnly 'org.obpcdl:obp2-runtime-lstate_event:2.0.0'
 }
-
-build.dependsOn createAppZip
