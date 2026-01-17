@@ -1,14 +1,23 @@
 plugins {
     id 'application'
-    id 'edu.sc.seis.macAppBundle' version '2.3.0'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'org.beryx.jlink' version '3.2.0'
 }
 
 application {
     mainClass = 'obp2.ui2.PlugUI'
+    mainModule = 'obp2.merged'
+    // NOTE: distZip doesn't work with JavaFX 23 + module system
+    // Use jlink image instead: ./gradlew :obp2-oneway:jlink
     applicationDefaultJvmArgs = [
         '-XX:+ExitOnOutOfMemoryError',
         '-Dapple.laf.useScreenMenuBar=true'
     ]
+}
+
+javafx {
+    version = '23.0.1'
+    modules = ['javafx.controls', 'javafx.swing']
 }
 
 java {
@@ -43,17 +52,6 @@ distributions {
     }
 }
 
-macAppBundle {
-    mainClassName = 'obp2.ui2.PlugUI'
-    icon = 'icon/OBP2.icns'
-    javaProperties = [
-        'apple.laf.useScreenMenuBar': 'true'
-    ]
-    dmgName = "${project.name}-osx-${project.version}"
-    bundleJRE = false
-    jreHome = ''
-}
-
 repositories {
     maven {
         url = 'https://repo.huaweicloud.com/eclipse/modeling/mdt/bpmn2/updates/2020-09/1.5.1/plugins/'
@@ -77,16 +75,80 @@ dependencies {
     runtimeOnly 'org.obpcdl:obp2-hash:2.0.0'
 
     //runtimes
-    runtimeOnly 'org.obpcdl:obp2-runtime-remote:2.0.0'
-    runtimeOnly 'org.obpcdl:obp2-bpmn2-semantics:2.0.0'
+    runtimeOnly('org.obpcdl:obp2-runtime-remote:2.0.0')
+    runtimeOnly('org.obpcdl:obp2-bpmn2-semantics:2.0.0') {
+        exclude group: 'org.eclipse.bpmn2', module: 'org.eclipse.bpmn2'
+    }
 
     //emf packages needed for org.eclipse.bpmn2
     runtimeOnly 'org.eclipse.emf:org.eclipse.emf.common:2.24.0'
     runtimeOnly 'org.eclipse.emf:org.eclipse.emf.ecore:2.26.0'
     runtimeOnly 'org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.16.0'
 
-    //bpmn2 packages
-    runtimeOnly 'org.eclipse.bpmn2:org.eclipse.bpmn2:1.5.1.Final-v20200903-1545@jar'
+    //bpmn2 packages - use local JAR as Eclipse P2 repo doesn't follow Maven layout
+    runtimeOnly files('libs/org.eclipse.bpmn2_1.5.1.Final-v20200814-1713.jar')
 }
 
-build.dependsOn createAppZip
+// jlink configuration for creating self-contained runtime images
+jlink {
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    
+    mergedModuleName = 'obp2.merged'
+    
+    launcher {
+        name = 'obp2-oneway'
+        jvmArgs = [
+            '-XX:+ExitOnOutOfMemoryError',
+            '-Dapple.laf.useScreenMenuBar=true',
+            '--add-opens', 'java.base/java.lang=obp2.merged',
+            '--add-opens', 'java.base/java.lang.reflect=obp2.merged',
+            '--add-opens', 'java.base/java.util=obp2.merged',
+            '--add-opens', 'java.base/java.io=obp2.merged'
+        ]
+        moduleName = 'obp2.merged'
+    }
+    
+    mergedModule {
+        additive = true
+        // KNOWN ISSUE: BPMN2 EMF models may have resource loading issues when merged
+        forceMerge 'obp2', 'jicpl', 'announce4j', 'ecore2java'
+        forceMerge 'antlr', 'json', 'kotlin', 'commons', 'jgrapht', 'cache2k'
+        forceMerge 'jna', 'jnr', 'asm', 'slf4j', 'logback', 'saxon'
+        forceMerge 'ikonli', 'materialdesign', 'controlsfx', 'jackson'
+        forceMerge 'eclipse', 'emf', 'bpmn2'
+    }
+    
+    jpackage {
+        imageName = 'OBP2-Oneway'
+        installerName = 'OBP2-Oneway'
+        appVersion = project.version.toString().replaceAll('[^0-9.]', '') ?: '2.0.0'
+        
+        javaHome = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(23)
+        }.get().metadata.installationPath.asFile.absolutePath
+        
+        def currentOs = org.gradle.internal.os.OperatingSystem.current()
+        if (currentOs.isMacOsX()) {
+            def iconFile = file('icon/OBP2.icns')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'dmg'
+            imageOptions = ['--mac-package-name', 'OBP2-Oneway']
+        } else if (currentOs.isWindows()) {
+            def iconFile = file('icon/OBP2.ico')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'msi'
+            installerOptions = ['--win-menu', '--win-shortcut']
+        } else if (currentOs.isLinux()) {
+            def iconFile = file('icon/OBP2.png')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'deb'
+            installerOptions = ['--linux-shortcut']
+        }
+    }
+}

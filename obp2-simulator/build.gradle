@@ -7,6 +7,8 @@ plugins {
 application {
     mainClass = 'obp2.ui2.simulation.ui.PlugSimulationUI'
     mainModule = 'obp2.merged'
+    // NOTE: distZip doesn't work with JavaFX 23 + module system
+    // Use jlink image instead: ./gradlew :obp2-simulator:jlink
     applicationDefaultJvmArgs = [
         '-XX:+ExitOnOutOfMemoryError',
         '-Dapple.laf.useScreenMenuBar=true'
