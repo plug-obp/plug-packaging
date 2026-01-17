@@ -1,14 +1,21 @@
 plugins {
     id 'application'
-    id 'edu.sc.seis.macAppBundle' version '2.3.0'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'org.beryx.jlink' version '3.2.0'
 }
 
 application {
     mainClass = 'obp2.ui2.PlugUI'
+    mainModule = 'obp2.merged'
     applicationDefaultJvmArgs = [
         '-XX:+ExitOnOutOfMemoryError',
         '-Dapple.laf.useScreenMenuBar=true'
     ]
+}
+
+javafx {
+    version = '23.0.1'
+    modules = ['javafx.controls', 'javafx.swing']
 }
 
 java {
@@ -29,17 +36,6 @@ distributions {
     }
 }
 
-macAppBundle {
-    mainClassName = 'obp2.ui2.PlugUI'
-    icon = 'icon/OBP2.icns'
-    javaProperties = [
-        'apple.laf.useScreenMenuBar': 'true'
-    ]
-    dmgName = "${project.name}-osx-${project.version}"
-    bundleJRE = false
-    jreHome = ''
-}
-
 dependencies {
     //UI support
     runtimeOnly 'org.obpcdl:obp2-GUI:2.0.0'
@@ -51,4 +47,64 @@ dependencies {
     runtimeOnly 'org.obpcdl:obp2-runtime-remote:2.0.0'
 }
 
-build.dependsOn createAppZip
+// jlink configuration for creating self-contained runtime images
+jlink {
+    options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+    
+    mergedModuleName = 'obp2.merged'
+    
+    launcher {
+        name = 'obp2-remote'
+        jvmArgs = [
+            '-XX:+ExitOnOutOfMemoryError',
+            '-Dapple.laf.useScreenMenuBar=true',
+            '--add-opens', 'java.base/java.lang=obp2.merged',
+            '--add-opens', 'java.base/java.lang.reflect=obp2.merged',
+            '--add-opens', 'java.base/java.util=obp2.merged',
+            '--add-opens', 'java.base/java.io=obp2.merged'
+        ]
+        moduleName = 'obp2.merged'
+    }
+    
+    mergedModule {
+        additive = true
+        forceMerge 'obp2', 'jicpl', 'announce4j', 'ecore2java'
+        forceMerge 'antlr', 'json', 'kotlin', 'commons', 'jgrapht', 'cache2k'
+        forceMerge 'jna', 'jnr', 'asm', 'slf4j', 'logback', 'saxon'
+        forceMerge 'ikonli', 'materialdesign', 'controlsfx', 'jackson'
+    }
+    
+    jpackage {
+        imageName = 'OBP2-Remote'
+        installerName = 'OBP2-Remote'
+        appVersion = project.version.toString().replaceAll('[^0-9.]', '') ?: '2.0.0'
+        
+        javaHome = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(23)
+        }.get().metadata.installationPath.asFile.absolutePath
+        
+        def currentOs = org.gradle.internal.os.OperatingSystem.current()
+        if (currentOs.isMacOsX()) {
+            def iconFile = file('icon/OBP2.icns')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'dmg'
+            imageOptions = ['--mac-package-name', 'OBP2-Remote']
+        } else if (currentOs.isWindows()) {
+            def iconFile = file('icon/OBP2.ico')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'msi'
+            installerOptions = ['--win-menu', '--win-shortcut']
+        } else if (currentOs.isLinux()) {
+            def iconFile = file('icon/OBP2.png')
+            if (iconFile.exists()) {
+                icon = iconFile.absolutePath
+            }
+            installerType = 'deb'
+            installerOptions = ['--linux-shortcut']
+        }
+    }
+}

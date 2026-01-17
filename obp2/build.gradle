@@ -76,14 +76,22 @@ jlink {
     
     launcher {
         name = 'obp2'
-        jvmArgs = ['-XX:+ExitOnOutOfMemoryError', '-Dapple.laf.useScreenMenuBar=true']
+        jvmArgs = [
+            '-XX:+ExitOnOutOfMemoryError',
+            '-Dapple.laf.useScreenMenuBar=true',
+            '--add-opens', 'java.base/java.lang=obp2.merged',
+            '--add-opens', 'java.base/java.lang.reflect=obp2.merged',
+            '--add-opens', 'java.base/java.util=obp2.merged',
+            '--add-opens', 'java.base/java.io=obp2.merged'
+        ]
         // Module is in merged module
         moduleName = 'obp2.merged'
     }
     
     mergedModule {
         additive = true
-        forceMerge 'obp2', 'jicpl', 'tla2tools', 'announce4j', 'ecore2java'
+        // Note: tla2tools is NOT force-merged to preserve resource loading for standard modules
+        forceMerge 'obp2', 'jicpl', 'announce4j', 'ecore2java'
         forceMerge 'antlr', 'json', 'kotlin', 'commons', 'jgrapht', 'cache2k'
         forceMerge 'jna', 'jnr', 'asm', 'slf4j', 'logback', 'saxon'
         forceMerge 'ikonli', 'materialdesign', 'controlsfx', 'jackson'
