@@ -6,6 +6,8 @@
 obp2/tmp
 
 *.pyc
+*.old
+!gradle/wrapper/gradle-wrapper.jar
 
 .classpath
 .project
