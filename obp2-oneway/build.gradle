@@ -75,7 +75,7 @@ dependencies {
 
     //runtimes
     runtimeOnly('org.obpcdl:obp2-runtime-remote:2.0.0')
-    runtimeOnly('org.obpcdl:obp2-bpmn2-semantics:2.0.0') {
+    runtimeOnly('org.obpcdl:obp2-runtime-bpmn2:3.0.0') {
         exclude group: 'org.eclipse.bpmn2', module: 'org.eclipse.bpmn2'
     }
 
